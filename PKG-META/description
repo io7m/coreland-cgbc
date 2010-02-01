@@ -1,0 +1,5 @@
+<p>This package provides a selection of bounded containers modelled on
+the Ada 2005 container libraries but with the intention of being usable
+in "high integrity" software.</p>
+<p>The containers are implemented without using access types, dynamic
+memory allocation and/or exceptions.</p>
