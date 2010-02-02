@@ -1,3 +1,4 @@
+
 -fprofile-arcs
 
 The first line of this file is passed to the Ada linker as extra flags.

@@ -1,3 +1,4 @@
+-g -fstack-check -gnatw.eHeFT.W -gnatVa -gnato -gnata -gnatW8 -gnatiw -gnaty2aAbdefhiklnoprStu
 -ftest-coverage -fprofile-arcs -g -fstack-check -gnatw.eHeFT.W -gnatVa -gnato -gnata -gnatW8 -gnatiw -gnaty2aAbdefhiklnoprStu
 
 The first line of this file is passed to the Ada compiler as extra flags.
