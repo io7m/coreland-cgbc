@@ -1,0 +1,42 @@
+#!/bin/sh
+
+PROGRAM_NAME="test-fail"
+
+info()
+{
+  echo "${PROGRAM_NAME}: info: $1" 1>&2
+}
+
+fatal()
+{
+  echo "${PROGRAM_NAME}: fatal: $1" 1>&2
+  exit 1
+}
+
+if [ $# -lt 5 ]
+then
+  echo "${PROGRAM_NAME}: usage: test-db test-results ID program [statement]" 1>&2
+  exit 1
+fi
+
+TEST_DB="$1"
+TEST_RESULTS="$2"
+TEST_ID="$3"
+TEST_PROGRAM="$4"
+TEST_STATEMENT="$5"
+
+TEST_WANT_PROGRAM=`cat ${TEST_DB}/tests/${TEST_ID}/program` ||
+  fatal "could not read ${TEST_DB}/tests/${TEST_ID}/program"
+
+if [ "${TEST_WANT_PROGRAM}" != "${TEST_PROGRAM}" ]
+then
+  fatal "invalid program for test"
+fi
+
+echo "FAIL" > "${TEST_RESULTS}/tests/${TEST_ID}/state.tmp" &&
+  mv "${TEST_RESULTS}/tests/${TEST_ID}/state.tmp" "${TEST_RESULTS}/tests/${TEST_ID}/state" ||
+    fatal "could not write ${TEST_RESULTS}/tests/${TEST_ID}/state"
+
+echo "${TEST_STATEMENT}" > "${TEST_RESULT_ENTRY}/statement.tmp" &&
+  mv "${TEST_RESULT_ENTRY}/state.tmp" "${TEST_RESULT_ENTRY}/statement" ||
+    fatal "could not write ${TEST_RESULT_ENTRY}/statement"

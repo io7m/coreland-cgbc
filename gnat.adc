@@ -1,3 +1,15 @@
 
+-- ./cgbc-bounded_hashed_maps.apk
+pragma source_file_name(CGBC.Bounded_Hashed_Maps, spec_file_name => "cgbc-bounded_hashed_maps.ads");
+pragma source_file_name(CGBC.Bounded_Hashed_Maps, body_file_name => "cgbc-bounded_hashed_maps.adb");
+
 -- ./cgbc.apk
 pragma source_file_name(CGBC, spec_file_name => "cgbc.ads");
+
+-- UNIT_TESTS/bht_support.apk
+pragma source_file_name(BHT_Support, spec_file_name => "bht_support.ads");
+pragma source_file_name(BHT_Support, body_file_name => "bht_support.adb");
+
+-- UNIT_TESTS/test.apk
+pragma source_file_name(Test, spec_file_name => "test.ads");
+pragma source_file_name(Test, body_file_name => "test.adb");
