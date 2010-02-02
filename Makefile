@@ -3,23 +3,27 @@
 default: all
 
 all:\
-UNIT_TESTS/bht_support.ali UNIT_TESTS/bht_support.o UNIT_TESTS/t_bht_01 \
-UNIT_TESTS/t_bht_01.ali UNIT_TESTS/t_bht_01.o UNIT_TESTS/t_bht_02 \
-UNIT_TESTS/t_bht_02.ali UNIT_TESTS/t_bht_02.o UNIT_TESTS/t_bht_03 \
-UNIT_TESTS/t_bht_03.ali UNIT_TESTS/t_bht_03.o UNIT_TESTS/t_bht_04 \
-UNIT_TESTS/t_bht_04.ali UNIT_TESTS/t_bht_04.o UNIT_TESTS/t_bht_05 \
-UNIT_TESTS/t_bht_05.ali UNIT_TESTS/t_bht_05.o UNIT_TESTS/t_bht_06 \
-UNIT_TESTS/t_bht_06.ali UNIT_TESTS/t_bht_06.o UNIT_TESTS/t_bht_07 \
-UNIT_TESTS/t_bht_07.ali UNIT_TESTS/t_bht_07.o UNIT_TESTS/t_bht_08 \
-UNIT_TESTS/t_bht_08.ali UNIT_TESTS/t_bht_08.o UNIT_TESTS/t_bht_09 \
-UNIT_TESTS/t_bht_09.ali UNIT_TESTS/t_bht_09.o UNIT_TESTS/t_bht_10 \
-UNIT_TESTS/t_bht_10.ali UNIT_TESTS/t_bht_10.o UNIT_TESTS/t_bht_11 \
-UNIT_TESTS/t_bht_11.ali UNIT_TESTS/t_bht_11.o UNIT_TESTS/t_bht_12 \
-UNIT_TESTS/t_bht_12.ali UNIT_TESTS/t_bht_12.o UNIT_TESTS/t_bht_13 \
-UNIT_TESTS/t_bht_13.ali UNIT_TESTS/t_bht_13.o UNIT_TESTS/t_bht_14 \
-UNIT_TESTS/t_bht_14.ali UNIT_TESTS/t_bht_14.o UNIT_TESTS/test.ali \
-UNIT_TESTS/test.o cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o \
-cgbc.a cgbc.ali cgbc.o
+UNIT_TESTS/bht_support.ali UNIT_TESTS/bht_support.o UNIT_TESTS/bs_support.ali \
+UNIT_TESTS/bs_support.o UNIT_TESTS/t_bht_01 UNIT_TESTS/t_bht_01.ali \
+UNIT_TESTS/t_bht_01.o UNIT_TESTS/t_bht_02 UNIT_TESTS/t_bht_02.ali \
+UNIT_TESTS/t_bht_02.o UNIT_TESTS/t_bht_03 UNIT_TESTS/t_bht_03.ali \
+UNIT_TESTS/t_bht_03.o UNIT_TESTS/t_bht_04 UNIT_TESTS/t_bht_04.ali \
+UNIT_TESTS/t_bht_04.o UNIT_TESTS/t_bht_05 UNIT_TESTS/t_bht_05.ali \
+UNIT_TESTS/t_bht_05.o UNIT_TESTS/t_bht_06 UNIT_TESTS/t_bht_06.ali \
+UNIT_TESTS/t_bht_06.o UNIT_TESTS/t_bht_07 UNIT_TESTS/t_bht_07.ali \
+UNIT_TESTS/t_bht_07.o UNIT_TESTS/t_bht_08 UNIT_TESTS/t_bht_08.ali \
+UNIT_TESTS/t_bht_08.o UNIT_TESTS/t_bht_09 UNIT_TESTS/t_bht_09.ali \
+UNIT_TESTS/t_bht_09.o UNIT_TESTS/t_bht_10 UNIT_TESTS/t_bht_10.ali \
+UNIT_TESTS/t_bht_10.o UNIT_TESTS/t_bht_11 UNIT_TESTS/t_bht_11.ali \
+UNIT_TESTS/t_bht_11.o UNIT_TESTS/t_bht_12 UNIT_TESTS/t_bht_12.ali \
+UNIT_TESTS/t_bht_12.o UNIT_TESTS/t_bht_13 UNIT_TESTS/t_bht_13.ali \
+UNIT_TESTS/t_bht_13.o UNIT_TESTS/t_bht_14 UNIT_TESTS/t_bht_14.ali \
+UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bs_01 UNIT_TESTS/t_bs_01.ali \
+UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
+UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali \
+UNIT_TESTS/t_bs_03.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
+cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.ali \
+cgbc-bounded_stacks.o cgbc.a cgbc.ali cgbc.o
 
 # Mkf-test
 tests:
@@ -33,6 +37,11 @@ cgbc-bounded_hashed_maps.ali
 UNIT_TESTS/bht_support.o UNIT_TESTS/bht_support.ali:\
 ada-compile UNIT_TESTS/bht_support.adb UNIT_TESTS/bht_support.ads
 	./ada-compile UNIT_TESTS/bht_support.adb
+
+UNIT_TESTS/bs_support.o UNIT_TESTS/bs_support.ali:\
+ada-compile UNIT_TESTS/bs_support.ads UNIT_TESTS/bs_support.ads \
+cgbc-bounded_stacks.ali
+	./ada-compile UNIT_TESTS/bs_support.ads
 
 UNIT_TESTS/t_bht_01:\
 ada-bind ada-link UNIT_TESTS/t_bht_01.ald UNIT_TESTS/t_bht_01.ali \
@@ -202,6 +211,39 @@ ada-compile UNIT_TESTS/t_bht_14.adb UNIT_TESTS/bht_support.ali \
 UNIT_TESTS/test.ali
 	./ada-compile UNIT_TESTS/t_bht_14.adb
 
+UNIT_TESTS/t_bs_01:\
+ada-bind ada-link UNIT_TESTS/t_bs_01.ald UNIT_TESTS/t_bs_01.ali \
+UNIT_TESTS/bs_support.ali cgbc-bounded_stacks.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bs_01.ali
+	./ada-link UNIT_TESTS/t_bs_01 UNIT_TESTS/t_bs_01.ali
+
+UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_01.ali:\
+ada-compile UNIT_TESTS/t_bs_01.adb UNIT_TESTS/bs_support.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bs_01.adb
+
+UNIT_TESTS/t_bs_02:\
+ada-bind ada-link UNIT_TESTS/t_bs_02.ald UNIT_TESTS/t_bs_02.ali \
+UNIT_TESTS/bs_support.ali cgbc-bounded_stacks.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bs_02.ali
+	./ada-link UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali
+
+UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_02.ali:\
+ada-compile UNIT_TESTS/t_bs_02.adb UNIT_TESTS/bs_support.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bs_02.adb
+
+UNIT_TESTS/t_bs_03:\
+ada-bind ada-link UNIT_TESTS/t_bs_03.ald UNIT_TESTS/t_bs_03.ali \
+UNIT_TESTS/bs_support.ali cgbc-bounded_stacks.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bs_03.ali
+	./ada-link UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali
+
+UNIT_TESTS/t_bs_03.o UNIT_TESTS/t_bs_03.ali:\
+ada-compile UNIT_TESTS/t_bs_03.adb UNIT_TESTS/bs_support.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bs_03.adb
+
 UNIT_TESTS/test.o UNIT_TESTS/test.ali:\
 ada-compile UNIT_TESTS/test.adb UNIT_TESTS/test.ads
 	./ada-compile UNIT_TESTS/test.adb
@@ -234,9 +276,13 @@ cgbc-bounded_hashed_maps.o cgbc-bounded_hashed_maps.ali:\
 ada-compile cgbc-bounded_hashed_maps.adb cgbc-bounded_hashed_maps.ads
 	./ada-compile cgbc-bounded_hashed_maps.adb
 
+cgbc-bounded_stacks.o cgbc-bounded_stacks.ali:\
+ada-compile cgbc-bounded_stacks.adb cgbc-bounded_stacks.ads
+	./ada-compile cgbc-bounded_stacks.adb
+
 cgbc.a:\
-cc-slib cgbc.sld cgbc-bounded_hashed_maps.o cgbc.o
-	./cc-slib cgbc cgbc-bounded_hashed_maps.o cgbc.o
+cc-slib cgbc.sld cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.o cgbc.o
+	./cc-slib cgbc cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.o cgbc.o
 
 cgbc.o cgbc.ali:\
 ada-compile cgbc.ads cgbc.ads
@@ -280,7 +326,8 @@ conf-cc conf-ld
 clean-all: tests_clean obj_clean ext_clean
 clean: obj_clean
 obj_clean:
-	rm -f UNIT_TESTS/bht_support.ali UNIT_TESTS/bht_support.o UNIT_TESTS/t_bht_01 \
+	rm -f UNIT_TESTS/bht_support.ali UNIT_TESTS/bht_support.o \
+	UNIT_TESTS/bs_support.ali UNIT_TESTS/bs_support.o UNIT_TESTS/t_bht_01 \
 	UNIT_TESTS/t_bht_01.ali UNIT_TESTS/t_bht_01.o UNIT_TESTS/t_bht_02 \
 	UNIT_TESTS/t_bht_02.ali UNIT_TESTS/t_bht_02.o UNIT_TESTS/t_bht_03 \
 	UNIT_TESTS/t_bht_03.ali UNIT_TESTS/t_bht_03.o UNIT_TESTS/t_bht_04 \
@@ -294,9 +341,13 @@ obj_clean:
 	UNIT_TESTS/t_bht_11.ali UNIT_TESTS/t_bht_11.o UNIT_TESTS/t_bht_12 \
 	UNIT_TESTS/t_bht_12.ali UNIT_TESTS/t_bht_12.o UNIT_TESTS/t_bht_13 \
 	UNIT_TESTS/t_bht_13.ali UNIT_TESTS/t_bht_13.o UNIT_TESTS/t_bht_14 \
-	UNIT_TESTS/t_bht_14.ali UNIT_TESTS/t_bht_14.o UNIT_TESTS/test.ali \
-	UNIT_TESTS/test.o cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o
-	rm -f cgbc.a cgbc.ali cgbc.o
+	UNIT_TESTS/t_bht_14.ali UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bs_01 \
+	UNIT_TESTS/t_bs_01.ali
+	rm -f UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
+	UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali \
+	UNIT_TESTS/t_bs_03.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
+	cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.ali \
+	cgbc-bounded_stacks.o cgbc.a cgbc.ali cgbc.o
 ext_clean:
 	rm -f conf-adatype conf-cctype conf-ldtype conf-systype mk-ctxt
 
