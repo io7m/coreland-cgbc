@@ -1,7 +1,25 @@
-<p>This package provides a selection of bounded containers modelled on
-the Ada 2005 container libraries but with the intention of being usable
-in "high integrity" software.</p>
-<p>The containers are implemented without using access types, dynamic
-memory allocation and/or exceptions.</p>
-<p>They are distributed with a set of unit tests covering 100.0% of
-the code.</p>
+<p>
+This package provides a selection of bounded containers modelled on
+the Ada 2005 containers.</p>
+<p>
+The containers are implemented without using access types and dynamic
+memory allocation in order to provide deterministic behaviour. The
+containers also avoid the use of exceptions, in order to ease
+static analysis and help manual auditing of program flow.</p>
+<p>
+The containers are distributed with a set of unit tests that are
+shown to cover all possible code paths (100% coverage according to
+various code coverage tools).</p>
+<p>
+Currently, the following packages are implemented:
+</p>
+<p>
+<ul>
+  <li>CGBC.Bounded_Stacks</li>
+  <li>CGBC.Bounded_Hashed_Maps</li>
+  <li>CGBC.Generic_Bounded_Strings</li>
+  <li>CGBC.Bounded_Strings</li>
+  <li>CGBC.Wide_Bounded_Strings</li>
+  <li>CGBC.Wide_Wide_Bounded_Strings</li>
+</ul>
+</p>
