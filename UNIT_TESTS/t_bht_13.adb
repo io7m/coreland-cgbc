@@ -9,9 +9,11 @@ procedure T_BHT_13 is
   Deleted  : Boolean;
   Inserted : Boolean;
 
+  pragma Warnings (Off);
   procedure Process
     (Key  : in BHT_Support.Key_Type4;
      Data : in Natural) is
+  pragma Warnings (On);
   begin
     Calls := Calls + 1;
   end Process;

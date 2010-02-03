@@ -12,9 +12,11 @@ procedure T_BHT_09 is
   Changed_Value  : constant Natural := 13;
   Inserted       : Boolean;
 
+  pragma Warnings (Off);
   procedure Process
     (Key  : BHT_Support.Key_Type4;
      Data : Natural) is
+  pragma Warnings (On);
   begin
     Correct_Value := Data = Changed_Value;
   end Process;

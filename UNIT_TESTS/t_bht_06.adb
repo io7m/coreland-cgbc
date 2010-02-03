@@ -13,8 +13,10 @@ procedure T_BHT_06 is
   -- invoke linear probing.
   --
 
+  pragma Warnings (Off);
   function First_Index_Hash (Key : in BHT_Support.Key_Type4)
     return CGBC.Hash_Type is
+  pragma Warnings (On);
   begin
     return 1;
   end First_Index_Hash;
