@@ -22,12 +22,15 @@ UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bs_01 UNIT_TESTS/t_bs_01.ali \
 UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
 UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali \
 UNIT_TESTS/t_bs_03.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
+cgbc-bounded_generic_strings.ali cgbc-bounded_generic_strings.o \
 cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.ali \
-cgbc-bounded_stacks.o cgbc-conf cgbc-conf.o cgbc.a cgbc.ali cgbc.o \
-ctxt/bindir.o ctxt/ctxt.a ctxt/dlibdir.o ctxt/fakeroot.o ctxt/incdir.o \
-ctxt/repos.o ctxt/slibdir.o ctxt/version.o deinstaller deinstaller.o \
-install-core.o install-posix.o install-win32.o install.a installer installer.o \
-instchk instchk.o insthier.o
+cgbc-bounded_stacks.o cgbc-bounded_strings.ali cgbc-bounded_strings.o \
+cgbc-bounded_wide_strings.ali cgbc-bounded_wide_strings.o \
+cgbc-bounded_wide_wide_strings.ali cgbc-bounded_wide_wide_strings.o cgbc-conf \
+cgbc-conf.o cgbc.a cgbc.ali cgbc.o ctxt/bindir.o ctxt/ctxt.a ctxt/dlibdir.o \
+ctxt/fakeroot.o ctxt/incdir.o ctxt/repos.o ctxt/slibdir.o ctxt/version.o \
+deinstaller deinstaller.o install-core.o install-posix.o install-win32.o \
+install.a installer installer.o instchk instchk.o insthier.o
 
 # Mkf-deinstall
 deinstall: deinstaller conf-sosuffix
@@ -294,6 +297,10 @@ conf-ld conf-ldtype conf-systype
 cc-slib:\
 conf-systype
 
+cgbc-bounded_generic_strings.o cgbc-bounded_generic_strings.ali:\
+ada-compile cgbc-bounded_generic_strings.adb cgbc-bounded_generic_strings.ads
+	./ada-compile cgbc-bounded_generic_strings.adb
+
 cgbc-bounded_hashed_maps.o cgbc-bounded_hashed_maps.ali:\
 ada-compile cgbc-bounded_hashed_maps.adb cgbc-bounded_hashed_maps.ads
 	./ada-compile cgbc-bounded_hashed_maps.adb
@@ -301,6 +308,21 @@ ada-compile cgbc-bounded_hashed_maps.adb cgbc-bounded_hashed_maps.ads
 cgbc-bounded_stacks.o cgbc-bounded_stacks.ali:\
 ada-compile cgbc-bounded_stacks.adb cgbc-bounded_stacks.ads
 	./ada-compile cgbc-bounded_stacks.adb
+
+cgbc-bounded_strings.o cgbc-bounded_strings.ali:\
+ada-compile cgbc-bounded_strings.ads cgbc-bounded_strings.ads \
+cgbc-bounded_generic_strings.ali
+	./ada-compile cgbc-bounded_strings.ads
+
+cgbc-bounded_wide_strings.o cgbc-bounded_wide_strings.ali:\
+ada-compile cgbc-bounded_wide_strings.ads cgbc-bounded_wide_strings.ads \
+cgbc-bounded_generic_strings.ali
+	./ada-compile cgbc-bounded_wide_strings.ads
+
+cgbc-bounded_wide_wide_strings.o cgbc-bounded_wide_wide_strings.ali:\
+ada-compile cgbc-bounded_wide_wide_strings.ads \
+cgbc-bounded_wide_wide_strings.ads cgbc-bounded_generic_strings.ali
+	./ada-compile cgbc-bounded_wide_wide_strings.ads
 
 cgbc-conf:\
 cc-link cgbc-conf.ld cgbc-conf.o ctxt/ctxt.a
@@ -311,8 +333,12 @@ cc-compile cgbc-conf.c ctxt.h
 	./cc-compile cgbc-conf.c
 
 cgbc.a:\
-cc-slib cgbc.sld cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.o cgbc.o
-	./cc-slib cgbc cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.o cgbc.o
+cc-slib cgbc.sld cgbc-bounded_generic_strings.o cgbc-bounded_hashed_maps.o \
+cgbc-bounded_stacks.o cgbc-bounded_strings.o cgbc-bounded_wide_strings.o \
+cgbc-bounded_wide_wide_strings.o cgbc.o
+	./cc-slib cgbc cgbc-bounded_generic_strings.o cgbc-bounded_hashed_maps.o \
+	cgbc-bounded_stacks.o cgbc-bounded_strings.o cgbc-bounded_wide_strings.o \
+	cgbc-bounded_wide_wide_strings.o cgbc.o
 
 cgbc.o cgbc.ali:\
 ada-compile cgbc.ads cgbc.ads
@@ -323,11 +349,11 @@ mk-adatype
 	./mk-adatype > conf-adatype.tmp && mv conf-adatype.tmp conf-adatype
 
 conf-cctype:\
-conf-cc mk-cctype
+conf-cc conf-cc mk-cctype
 	./mk-cctype > conf-cctype.tmp && mv conf-cctype.tmp conf-cctype
 
 conf-ldtype:\
-conf-ld mk-ldtype
+conf-ld conf-ld mk-ldtype
 	./mk-ldtype > conf-ldtype.tmp && mv conf-ldtype.tmp conf-ldtype
 
 conf-systype:\
@@ -492,13 +518,17 @@ obj_clean:
 	rm -f UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
 	UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali \
 	UNIT_TESTS/t_bs_03.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
+	cgbc-bounded_generic_strings.ali cgbc-bounded_generic_strings.o \
 	cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.ali \
-	cgbc-bounded_stacks.o cgbc-conf cgbc-conf.o cgbc.a cgbc.ali cgbc.o \
-	ctxt/bindir.c ctxt/bindir.o ctxt/ctxt.a ctxt/dlibdir.c ctxt/dlibdir.o \
-	ctxt/fakeroot.c ctxt/fakeroot.o ctxt/incdir.c ctxt/incdir.o ctxt/repos.c \
-	ctxt/repos.o ctxt/slibdir.c ctxt/slibdir.o ctxt/version.c ctxt/version.o \
-	deinstaller deinstaller.o install-core.o install-posix.o install-win32.o \
-	install.a installer installer.o instchk instchk.o insthier.o
+	cgbc-bounded_stacks.o cgbc-bounded_strings.ali cgbc-bounded_strings.o \
+	cgbc-bounded_wide_strings.ali cgbc-bounded_wide_strings.o \
+	cgbc-bounded_wide_wide_strings.ali cgbc-bounded_wide_wide_strings.o cgbc-conf \
+	cgbc-conf.o cgbc.a cgbc.ali cgbc.o ctxt/bindir.c ctxt/bindir.o ctxt/ctxt.a \
+	ctxt/dlibdir.c ctxt/dlibdir.o ctxt/fakeroot.c ctxt/fakeroot.o ctxt/incdir.c \
+	ctxt/incdir.o ctxt/repos.c ctxt/repos.o ctxt/slibdir.c ctxt/slibdir.o \
+	ctxt/version.c ctxt/version.o deinstaller deinstaller.o install-core.o \
+	install-posix.o install-win32.o install.a installer installer.o instchk \
+	instchk.o insthier.o
 ext_clean:
 	rm -f conf-adatype conf-cctype conf-ldtype conf-systype mk-ctxt
 
