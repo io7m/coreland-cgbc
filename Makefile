@@ -18,7 +18,8 @@ UNIT_TESTS/t_bht_10.o UNIT_TESTS/t_bht_11 UNIT_TESTS/t_bht_11.ali \
 UNIT_TESTS/t_bht_11.o UNIT_TESTS/t_bht_12 UNIT_TESTS/t_bht_12.ali \
 UNIT_TESTS/t_bht_12.o UNIT_TESTS/t_bht_13 UNIT_TESTS/t_bht_13.ali \
 UNIT_TESTS/t_bht_13.o UNIT_TESTS/t_bht_14 UNIT_TESTS/t_bht_14.ali \
-UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bs_01 UNIT_TESTS/t_bs_01.ali \
+UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bht_15 UNIT_TESTS/t_bht_15.ali \
+UNIT_TESTS/t_bht_15.o UNIT_TESTS/t_bs_01 UNIT_TESTS/t_bs_01.ali \
 UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
 UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali \
 UNIT_TESTS/t_bs_03.o UNIT_TESTS/t_bstr_append_01 \
@@ -355,6 +356,18 @@ UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bht_14.ali:\
 ada-compile UNIT_TESTS/t_bht_14.adb UNIT_TESTS/bht_support.ali \
 UNIT_TESTS/test.ali
 	./ada-compile UNIT_TESTS/t_bht_14.adb
+
+UNIT_TESTS/t_bht_15:\
+ada-bind ada-link UNIT_TESTS/t_bht_15.ald UNIT_TESTS/t_bht_15.ali \
+UNIT_TESTS/bht_support.ali cgbc-bounded_hashed_maps.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bht_15.ali
+	./ada-link UNIT_TESTS/t_bht_15 UNIT_TESTS/t_bht_15.ali
+
+UNIT_TESTS/t_bht_15.o UNIT_TESTS/t_bht_15.ali:\
+ada-compile UNIT_TESTS/t_bht_15.adb UNIT_TESTS/bht_support.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bht_15.adb
 
 UNIT_TESTS/t_bs_01:\
 ada-bind ada-link UNIT_TESTS/t_bs_01.ald UNIT_TESTS/t_bs_01.ali \
@@ -1263,11 +1276,11 @@ mk-adatype
 	./mk-adatype > conf-adatype.tmp && mv conf-adatype.tmp conf-adatype
 
 conf-cctype:\
-conf-cc conf-cc mk-cctype
+conf-cc mk-cctype
 	./mk-cctype > conf-cctype.tmp && mv conf-cctype.tmp conf-cctype
 
 conf-ldtype:\
-conf-ld conf-ld mk-ldtype
+conf-ld mk-ldtype
 	./mk-ldtype > conf-ldtype.tmp && mv conf-ldtype.tmp conf-ldtype
 
 conf-sosuffix:\
@@ -1434,9 +1447,10 @@ obj_clean:
 	UNIT_TESTS/t_bht_11.ali UNIT_TESTS/t_bht_11.o UNIT_TESTS/t_bht_12 \
 	UNIT_TESTS/t_bht_12.ali UNIT_TESTS/t_bht_12.o UNIT_TESTS/t_bht_13 \
 	UNIT_TESTS/t_bht_13.ali UNIT_TESTS/t_bht_13.o UNIT_TESTS/t_bht_14 \
-	UNIT_TESTS/t_bht_14.ali UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bs_01 \
-	UNIT_TESTS/t_bs_01.ali
-	rm -f UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
+	UNIT_TESTS/t_bht_14.ali UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bht_15 \
+	UNIT_TESTS/t_bht_15.ali
+	rm -f UNIT_TESTS/t_bht_15.o UNIT_TESTS/t_bs_01 UNIT_TESTS/t_bs_01.ali \
+	UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
 	UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali \
 	UNIT_TESTS/t_bs_03.o UNIT_TESTS/t_bstr_append_01 \
 	UNIT_TESTS/t_bstr_append_01.ali UNIT_TESTS/t_bstr_append_01.o \
@@ -1451,9 +1465,9 @@ obj_clean:
 	UNIT_TESTS/t_bstr_append_lb02.ali UNIT_TESTS/t_bstr_append_lb02.o \
 	UNIT_TESTS/t_bstr_append_lb03 UNIT_TESTS/t_bstr_append_lb03.ali \
 	UNIT_TESTS/t_bstr_append_lb03.o UNIT_TESTS/t_bstr_append_r01 \
-	UNIT_TESTS/t_bstr_append_r01.ali UNIT_TESTS/t_bstr_append_r01.o \
-	UNIT_TESTS/t_bstr_append_r02 UNIT_TESTS/t_bstr_append_r02.ali
-	rm -f UNIT_TESTS/t_bstr_append_r02.o UNIT_TESTS/t_bstr_append_r03 \
+	UNIT_TESTS/t_bstr_append_r01.ali UNIT_TESTS/t_bstr_append_r01.o
+	rm -f UNIT_TESTS/t_bstr_append_r02 UNIT_TESTS/t_bstr_append_r02.ali \
+	UNIT_TESTS/t_bstr_append_r02.o UNIT_TESTS/t_bstr_append_r03 \
 	UNIT_TESTS/t_bstr_append_r03.ali UNIT_TESTS/t_bstr_append_r03.o \
 	UNIT_TESTS/t_bstr_append_rb01 UNIT_TESTS/t_bstr_append_rb01.ali \
 	UNIT_TESTS/t_bstr_append_rb01.o UNIT_TESTS/t_bstr_append_rb02 \
@@ -1468,9 +1482,9 @@ obj_clean:
 	UNIT_TESTS/t_bstr_init_01.o UNIT_TESTS/t_bstr_init_02 \
 	UNIT_TESTS/t_bstr_init_02.ali UNIT_TESTS/t_bstr_init_02.o \
 	UNIT_TESTS/t_bstr_slice_01 UNIT_TESTS/t_bstr_slice_01.ali \
-	UNIT_TESTS/t_bstr_slice_01.o UNIT_TESTS/t_bstr_slice_02 \
-	UNIT_TESTS/t_bstr_slice_02.ali UNIT_TESTS/t_bstr_slice_02.o
-	rm -f UNIT_TESTS/t_bstr_truncate_01 UNIT_TESTS/t_bstr_truncate_01.ali \
+	UNIT_TESTS/t_bstr_slice_01.o UNIT_TESTS/t_bstr_slice_02
+	rm -f UNIT_TESTS/t_bstr_slice_02.ali UNIT_TESTS/t_bstr_slice_02.o \
+	UNIT_TESTS/t_bstr_truncate_01 UNIT_TESTS/t_bstr_truncate_01.ali \
 	UNIT_TESTS/t_bstr_truncate_01.o UNIT_TESTS/t_wbstr_append_01 \
 	UNIT_TESTS/t_wbstr_append_01.ali UNIT_TESTS/t_wbstr_append_01.o \
 	UNIT_TESTS/t_wbstr_append_e01 UNIT_TESTS/t_wbstr_append_e01.ali \
@@ -1485,71 +1499,71 @@ obj_clean:
 	UNIT_TESTS/t_wbstr_append_lb03 UNIT_TESTS/t_wbstr_append_lb03.ali \
 	UNIT_TESTS/t_wbstr_append_lb03.o UNIT_TESTS/t_wbstr_append_r01 \
 	UNIT_TESTS/t_wbstr_append_r01.ali UNIT_TESTS/t_wbstr_append_r01.o \
-	UNIT_TESTS/t_wbstr_append_r02 UNIT_TESTS/t_wbstr_append_r02.ali
-	rm -f UNIT_TESTS/t_wbstr_append_r02.o UNIT_TESTS/t_wbstr_append_r03 \
-	UNIT_TESTS/t_wbstr_append_r03.ali UNIT_TESTS/t_wbstr_append_r03.o \
-	UNIT_TESTS/t_wbstr_append_rb01 UNIT_TESTS/t_wbstr_append_rb01.ali \
-	UNIT_TESTS/t_wbstr_append_rb01.o UNIT_TESTS/t_wbstr_append_rb02 \
-	UNIT_TESTS/t_wbstr_append_rb02.ali UNIT_TESTS/t_wbstr_append_rb02.o \
-	UNIT_TESTS/t_wbstr_append_rb03 UNIT_TESTS/t_wbstr_append_rb03.ali \
-	UNIT_TESTS/t_wbstr_append_rb03.o UNIT_TESTS/t_wbstr_element_01 \
-	UNIT_TESTS/t_wbstr_element_01.ali UNIT_TESTS/t_wbstr_element_01.o \
-	UNIT_TESTS/t_wbstr_element_02 UNIT_TESTS/t_wbstr_element_02.ali \
-	UNIT_TESTS/t_wbstr_element_02.o UNIT_TESTS/t_wbstr_equivalent_01 \
-	UNIT_TESTS/t_wbstr_equivalent_01.ali UNIT_TESTS/t_wbstr_equivalent_01.o \
-	UNIT_TESTS/t_wbstr_init_01 UNIT_TESTS/t_wbstr_init_01.ali \
-	UNIT_TESTS/t_wbstr_init_01.o UNIT_TESTS/t_wbstr_init_02 \
-	UNIT_TESTS/t_wbstr_init_02.ali UNIT_TESTS/t_wbstr_init_02.o \
-	UNIT_TESTS/t_wbstr_slice_01 UNIT_TESTS/t_wbstr_slice_01.ali \
-	UNIT_TESTS/t_wbstr_slice_01.o UNIT_TESTS/t_wbstr_slice_02 \
-	UNIT_TESTS/t_wbstr_slice_02.ali
-	rm -f UNIT_TESTS/t_wbstr_slice_02.o UNIT_TESTS/t_wbstr_truncate_01 \
-	UNIT_TESTS/t_wbstr_truncate_01.ali UNIT_TESTS/t_wbstr_truncate_01.o \
-	UNIT_TESTS/t_wwbstr_append_01 UNIT_TESTS/t_wwbstr_append_01.ali \
-	UNIT_TESTS/t_wwbstr_append_01.o UNIT_TESTS/t_wwbstr_append_e01 \
-	UNIT_TESTS/t_wwbstr_append_e01.ali UNIT_TESTS/t_wwbstr_append_e01.o \
-	UNIT_TESTS/t_wwbstr_append_l01 UNIT_TESTS/t_wwbstr_append_l01.ali \
-	UNIT_TESTS/t_wwbstr_append_l01.o UNIT_TESTS/t_wwbstr_append_l02 \
-	UNIT_TESTS/t_wwbstr_append_l02.ali UNIT_TESTS/t_wwbstr_append_l02.o \
-	UNIT_TESTS/t_wwbstr_append_l03 UNIT_TESTS/t_wwbstr_append_l03.ali \
-	UNIT_TESTS/t_wwbstr_append_l03.o UNIT_TESTS/t_wwbstr_append_lb01 \
-	UNIT_TESTS/t_wwbstr_append_lb01.ali UNIT_TESTS/t_wwbstr_append_lb01.o \
-	UNIT_TESTS/t_wwbstr_append_lb02 UNIT_TESTS/t_wwbstr_append_lb02.ali \
-	UNIT_TESTS/t_wwbstr_append_lb02.o UNIT_TESTS/t_wwbstr_append_lb03 \
-	UNIT_TESTS/t_wwbstr_append_lb03.ali UNIT_TESTS/t_wwbstr_append_lb03.o \
-	UNIT_TESTS/t_wwbstr_append_r01 UNIT_TESTS/t_wwbstr_append_r01.ali \
-	UNIT_TESTS/t_wwbstr_append_r01.o
-	rm -f UNIT_TESTS/t_wwbstr_append_r02 UNIT_TESTS/t_wwbstr_append_r02.ali \
-	UNIT_TESTS/t_wwbstr_append_r02.o UNIT_TESTS/t_wwbstr_append_r03 \
-	UNIT_TESTS/t_wwbstr_append_r03.ali UNIT_TESTS/t_wwbstr_append_r03.o \
-	UNIT_TESTS/t_wwbstr_append_rb01 UNIT_TESTS/t_wwbstr_append_rb01.ali \
-	UNIT_TESTS/t_wwbstr_append_rb01.o UNIT_TESTS/t_wwbstr_append_rb02 \
-	UNIT_TESTS/t_wwbstr_append_rb02.ali UNIT_TESTS/t_wwbstr_append_rb02.o \
-	UNIT_TESTS/t_wwbstr_append_rb03 UNIT_TESTS/t_wwbstr_append_rb03.ali \
-	UNIT_TESTS/t_wwbstr_append_rb03.o UNIT_TESTS/t_wwbstr_element_01 \
-	UNIT_TESTS/t_wwbstr_element_01.ali UNIT_TESTS/t_wwbstr_element_01.o \
-	UNIT_TESTS/t_wwbstr_element_02 UNIT_TESTS/t_wwbstr_element_02.ali \
-	UNIT_TESTS/t_wwbstr_element_02.o UNIT_TESTS/t_wwbstr_equivalent_01 \
-	UNIT_TESTS/t_wwbstr_equivalent_01.ali UNIT_TESTS/t_wwbstr_equivalent_01.o \
-	UNIT_TESTS/t_wwbstr_init_01 UNIT_TESTS/t_wwbstr_init_01.ali \
-	UNIT_TESTS/t_wwbstr_init_01.o UNIT_TESTS/t_wwbstr_init_02 \
-	UNIT_TESTS/t_wwbstr_init_02.ali UNIT_TESTS/t_wwbstr_init_02.o \
-	UNIT_TESTS/t_wwbstr_slice_01 UNIT_TESTS/t_wwbstr_slice_01.ali
-	rm -f UNIT_TESTS/t_wwbstr_slice_01.o UNIT_TESTS/t_wwbstr_slice_02 \
-	UNIT_TESTS/t_wwbstr_slice_02.ali UNIT_TESTS/t_wwbstr_slice_02.o \
-	UNIT_TESTS/t_wwbstr_truncate_01 UNIT_TESTS/t_wwbstr_truncate_01.ali \
-	UNIT_TESTS/t_wwbstr_truncate_01.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
-	cgbc-bounded_generic_strings.ali cgbc-bounded_generic_strings.o \
-	cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.ali \
-	cgbc-bounded_stacks.o cgbc-bounded_strings.ali cgbc-bounded_strings.o \
-	cgbc-bounded_wide_strings.ali cgbc-bounded_wide_strings.o \
-	cgbc-bounded_wide_wide_strings.ali cgbc-bounded_wide_wide_strings.o cgbc-conf \
-	cgbc-conf.o cgbc.a cgbc.ali cgbc.o ctxt/bindir.c ctxt/bindir.o ctxt/ctxt.a \
-	ctxt/dlibdir.c ctxt/dlibdir.o ctxt/fakeroot.c ctxt/fakeroot.o ctxt/incdir.c \
-	ctxt/incdir.o ctxt/repos.c ctxt/repos.o ctxt/slibdir.c ctxt/slibdir.o \
-	ctxt/version.c ctxt/version.o deinstaller deinstaller.o install-core.o \
-	install-posix.o install-win32.o install.a installer installer.o instchk \
-	instchk.o insthier.o
+	UNIT_TESTS/t_wbstr_append_r02
+	rm -f UNIT_TESTS/t_wbstr_append_r02.ali UNIT_TESTS/t_wbstr_append_r02.o \
+	UNIT_TESTS/t_wbstr_append_r03 UNIT_TESTS/t_wbstr_append_r03.ali \
+	UNIT_TESTS/t_wbstr_append_r03.o UNIT_TESTS/t_wbstr_append_rb01 \
+	UNIT_TESTS/t_wbstr_append_rb01.ali UNIT_TESTS/t_wbstr_append_rb01.o \
+	UNIT_TESTS/t_wbstr_append_rb02 UNIT_TESTS/t_wbstr_append_rb02.ali \
+	UNIT_TESTS/t_wbstr_append_rb02.o UNIT_TESTS/t_wbstr_append_rb03 \
+	UNIT_TESTS/t_wbstr_append_rb03.ali UNIT_TESTS/t_wbstr_append_rb03.o \
+	UNIT_TESTS/t_wbstr_element_01 UNIT_TESTS/t_wbstr_element_01.ali \
+	UNIT_TESTS/t_wbstr_element_01.o UNIT_TESTS/t_wbstr_element_02 \
+	UNIT_TESTS/t_wbstr_element_02.ali UNIT_TESTS/t_wbstr_element_02.o \
+	UNIT_TESTS/t_wbstr_equivalent_01 UNIT_TESTS/t_wbstr_equivalent_01.ali \
+	UNIT_TESTS/t_wbstr_equivalent_01.o UNIT_TESTS/t_wbstr_init_01 \
+	UNIT_TESTS/t_wbstr_init_01.ali UNIT_TESTS/t_wbstr_init_01.o \
+	UNIT_TESTS/t_wbstr_init_02 UNIT_TESTS/t_wbstr_init_02.ali \
+	UNIT_TESTS/t_wbstr_init_02.o UNIT_TESTS/t_wbstr_slice_01 \
+	UNIT_TESTS/t_wbstr_slice_01.ali UNIT_TESTS/t_wbstr_slice_01.o \
+	UNIT_TESTS/t_wbstr_slice_02
+	rm -f UNIT_TESTS/t_wbstr_slice_02.ali UNIT_TESTS/t_wbstr_slice_02.o \
+	UNIT_TESTS/t_wbstr_truncate_01 UNIT_TESTS/t_wbstr_truncate_01.ali \
+	UNIT_TESTS/t_wbstr_truncate_01.o UNIT_TESTS/t_wwbstr_append_01 \
+	UNIT_TESTS/t_wwbstr_append_01.ali UNIT_TESTS/t_wwbstr_append_01.o \
+	UNIT_TESTS/t_wwbstr_append_e01 UNIT_TESTS/t_wwbstr_append_e01.ali \
+	UNIT_TESTS/t_wwbstr_append_e01.o UNIT_TESTS/t_wwbstr_append_l01 \
+	UNIT_TESTS/t_wwbstr_append_l01.ali UNIT_TESTS/t_wwbstr_append_l01.o \
+	UNIT_TESTS/t_wwbstr_append_l02 UNIT_TESTS/t_wwbstr_append_l02.ali \
+	UNIT_TESTS/t_wwbstr_append_l02.o UNIT_TESTS/t_wwbstr_append_l03 \
+	UNIT_TESTS/t_wwbstr_append_l03.ali UNIT_TESTS/t_wwbstr_append_l03.o \
+	UNIT_TESTS/t_wwbstr_append_lb01 UNIT_TESTS/t_wwbstr_append_lb01.ali \
+	UNIT_TESTS/t_wwbstr_append_lb01.o UNIT_TESTS/t_wwbstr_append_lb02 \
+	UNIT_TESTS/t_wwbstr_append_lb02.ali UNIT_TESTS/t_wwbstr_append_lb02.o \
+	UNIT_TESTS/t_wwbstr_append_lb03 UNIT_TESTS/t_wwbstr_append_lb03.ali \
+	UNIT_TESTS/t_wwbstr_append_lb03.o UNIT_TESTS/t_wwbstr_append_r01 \
+	UNIT_TESTS/t_wwbstr_append_r01.ali
+	rm -f UNIT_TESTS/t_wwbstr_append_r01.o UNIT_TESTS/t_wwbstr_append_r02 \
+	UNIT_TESTS/t_wwbstr_append_r02.ali UNIT_TESTS/t_wwbstr_append_r02.o \
+	UNIT_TESTS/t_wwbstr_append_r03 UNIT_TESTS/t_wwbstr_append_r03.ali \
+	UNIT_TESTS/t_wwbstr_append_r03.o UNIT_TESTS/t_wwbstr_append_rb01 \
+	UNIT_TESTS/t_wwbstr_append_rb01.ali UNIT_TESTS/t_wwbstr_append_rb01.o \
+	UNIT_TESTS/t_wwbstr_append_rb02 UNIT_TESTS/t_wwbstr_append_rb02.ali \
+	UNIT_TESTS/t_wwbstr_append_rb02.o UNIT_TESTS/t_wwbstr_append_rb03 \
+	UNIT_TESTS/t_wwbstr_append_rb03.ali UNIT_TESTS/t_wwbstr_append_rb03.o \
+	UNIT_TESTS/t_wwbstr_element_01 UNIT_TESTS/t_wwbstr_element_01.ali \
+	UNIT_TESTS/t_wwbstr_element_01.o UNIT_TESTS/t_wwbstr_element_02 \
+	UNIT_TESTS/t_wwbstr_element_02.ali UNIT_TESTS/t_wwbstr_element_02.o \
+	UNIT_TESTS/t_wwbstr_equivalent_01 UNIT_TESTS/t_wwbstr_equivalent_01.ali \
+	UNIT_TESTS/t_wwbstr_equivalent_01.o UNIT_TESTS/t_wwbstr_init_01 \
+	UNIT_TESTS/t_wwbstr_init_01.ali UNIT_TESTS/t_wwbstr_init_01.o \
+	UNIT_TESTS/t_wwbstr_init_02 UNIT_TESTS/t_wwbstr_init_02.ali \
+	UNIT_TESTS/t_wwbstr_init_02.o UNIT_TESTS/t_wwbstr_slice_01
+	rm -f UNIT_TESTS/t_wwbstr_slice_01.ali UNIT_TESTS/t_wwbstr_slice_01.o \
+	UNIT_TESTS/t_wwbstr_slice_02 UNIT_TESTS/t_wwbstr_slice_02.ali \
+	UNIT_TESTS/t_wwbstr_slice_02.o UNIT_TESTS/t_wwbstr_truncate_01 \
+	UNIT_TESTS/t_wwbstr_truncate_01.ali UNIT_TESTS/t_wwbstr_truncate_01.o \
+	UNIT_TESTS/test.ali UNIT_TESTS/test.o cgbc-bounded_generic_strings.ali \
+	cgbc-bounded_generic_strings.o cgbc-bounded_hashed_maps.ali \
+	cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.ali cgbc-bounded_stacks.o \
+	cgbc-bounded_strings.ali cgbc-bounded_strings.o cgbc-bounded_wide_strings.ali \
+	cgbc-bounded_wide_strings.o cgbc-bounded_wide_wide_strings.ali \
+	cgbc-bounded_wide_wide_strings.o cgbc-conf cgbc-conf.o cgbc.a cgbc.ali cgbc.o \
+	ctxt/bindir.c ctxt/bindir.o ctxt/ctxt.a ctxt/dlibdir.c ctxt/dlibdir.o \
+	ctxt/fakeroot.c ctxt/fakeroot.o ctxt/incdir.c ctxt/incdir.o ctxt/repos.c \
+	ctxt/repos.o ctxt/slibdir.c ctxt/slibdir.o ctxt/version.c ctxt/version.o \
+	deinstaller deinstaller.o install-core.o install-posix.o install-win32.o \
+	install.a installer installer.o instchk instchk.o insthier.o
 ext_clean:
 	rm -f conf-adatype conf-cctype conf-ldtype conf-sosuffix conf-systype mk-ctxt
 

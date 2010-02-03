@@ -68,6 +68,11 @@ package CGBC.Bounded_Hashed_Maps is
 
   procedure Query_All_Elements (Container : in Map);
 
+  generic
+    with procedure Process (Key : in Key_Type);
+
+  procedure Query_All_Keys (Container : in Map);
+
   procedure Replace_Element
     (Container : in out Map;
      Key       : in     Key_Type;

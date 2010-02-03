@@ -328,6 +328,23 @@ package body CGBC.Bounded_Hashed_Maps is
   end Query_All_Elements;
 
   --
+  -- Query_All_Keys
+  --
+
+  procedure Query_All_Keys (Container : in Map) is
+  begin
+    for Index in Container.Buckets'Range loop
+      declare
+        Current_Bucket : Bucket_Type renames Container.Buckets (Index);
+      begin
+        if Current_Bucket.State = Used then
+          Process (Current_Bucket.Key);
+        end if;
+      end;
+    end loop;
+  end Query_All_Keys;
+
+  --
   -- Query_Element
   --
 
