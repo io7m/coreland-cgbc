@@ -24,15 +24,10 @@ const char progname[] = "cgbc-conf";
 
 void flag_incdir(void)
 {
-  unsigned long pos;
-  if (flag & FLAG_COMPILE) {
-    pos = str_rchr(ctxt_incdir, '/');
-    if (pos)
-      ctxt_incdir[str_rchr(ctxt_incdir, '/')] = 0;
+  if (flag & FLAG_COMPILE)
     printf("-I%s ", ctxt_incdir);
-  } else {
+  else
     printf("%s ", ctxt_incdir);
-  }
 }
 void flag_cflags(void)
 {
