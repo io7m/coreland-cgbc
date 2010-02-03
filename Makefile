@@ -21,7 +21,106 @@ UNIT_TESTS/t_bht_13.o UNIT_TESTS/t_bht_14 UNIT_TESTS/t_bht_14.ali \
 UNIT_TESTS/t_bht_14.o UNIT_TESTS/t_bs_01 UNIT_TESTS/t_bs_01.ali \
 UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
 UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali \
-UNIT_TESTS/t_bs_03.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
+UNIT_TESTS/t_bs_03.o UNIT_TESTS/t_bstr_append_01 \
+UNIT_TESTS/t_bstr_append_01.ali UNIT_TESTS/t_bstr_append_01.o \
+UNIT_TESTS/t_bstr_append_e01 UNIT_TESTS/t_bstr_append_e01.ali \
+UNIT_TESTS/t_bstr_append_e01.o UNIT_TESTS/t_bstr_append_l01 \
+UNIT_TESTS/t_bstr_append_l01.ali UNIT_TESTS/t_bstr_append_l01.o \
+UNIT_TESTS/t_bstr_append_l02 UNIT_TESTS/t_bstr_append_l02.ali \
+UNIT_TESTS/t_bstr_append_l02.o UNIT_TESTS/t_bstr_append_l03 \
+UNIT_TESTS/t_bstr_append_l03.ali UNIT_TESTS/t_bstr_append_l03.o \
+UNIT_TESTS/t_bstr_append_lb01 UNIT_TESTS/t_bstr_append_lb01.ali \
+UNIT_TESTS/t_bstr_append_lb01.o UNIT_TESTS/t_bstr_append_lb02 \
+UNIT_TESTS/t_bstr_append_lb02.ali UNIT_TESTS/t_bstr_append_lb02.o \
+UNIT_TESTS/t_bstr_append_lb03 UNIT_TESTS/t_bstr_append_lb03.ali \
+UNIT_TESTS/t_bstr_append_lb03.o UNIT_TESTS/t_bstr_append_r01 \
+UNIT_TESTS/t_bstr_append_r01.ali UNIT_TESTS/t_bstr_append_r01.o \
+UNIT_TESTS/t_bstr_append_r02 UNIT_TESTS/t_bstr_append_r02.ali \
+UNIT_TESTS/t_bstr_append_r02.o UNIT_TESTS/t_bstr_append_r03 \
+UNIT_TESTS/t_bstr_append_r03.ali UNIT_TESTS/t_bstr_append_r03.o \
+UNIT_TESTS/t_bstr_append_rb01 UNIT_TESTS/t_bstr_append_rb01.ali \
+UNIT_TESTS/t_bstr_append_rb01.o UNIT_TESTS/t_bstr_append_rb02 \
+UNIT_TESTS/t_bstr_append_rb02.ali UNIT_TESTS/t_bstr_append_rb02.o \
+UNIT_TESTS/t_bstr_append_rb03 UNIT_TESTS/t_bstr_append_rb03.ali \
+UNIT_TESTS/t_bstr_append_rb03.o UNIT_TESTS/t_bstr_element_01 \
+UNIT_TESTS/t_bstr_element_01.ali UNIT_TESTS/t_bstr_element_01.o \
+UNIT_TESTS/t_bstr_element_02 UNIT_TESTS/t_bstr_element_02.ali \
+UNIT_TESTS/t_bstr_element_02.o UNIT_TESTS/t_bstr_equivalent_01 \
+UNIT_TESTS/t_bstr_equivalent_01.ali UNIT_TESTS/t_bstr_equivalent_01.o \
+UNIT_TESTS/t_bstr_init_01 UNIT_TESTS/t_bstr_init_01.ali \
+UNIT_TESTS/t_bstr_init_01.o UNIT_TESTS/t_bstr_init_02 \
+UNIT_TESTS/t_bstr_init_02.ali UNIT_TESTS/t_bstr_init_02.o \
+UNIT_TESTS/t_bstr_slice_01 UNIT_TESTS/t_bstr_slice_01.ali \
+UNIT_TESTS/t_bstr_slice_01.o UNIT_TESTS/t_bstr_slice_02 \
+UNIT_TESTS/t_bstr_slice_02.ali UNIT_TESTS/t_bstr_slice_02.o \
+UNIT_TESTS/t_bstr_truncate_01 UNIT_TESTS/t_bstr_truncate_01.ali \
+UNIT_TESTS/t_bstr_truncate_01.o UNIT_TESTS/t_wbstr_append_01 \
+UNIT_TESTS/t_wbstr_append_01.ali UNIT_TESTS/t_wbstr_append_01.o \
+UNIT_TESTS/t_wbstr_append_e01 UNIT_TESTS/t_wbstr_append_e01.ali \
+UNIT_TESTS/t_wbstr_append_e01.o UNIT_TESTS/t_wbstr_append_l01 \
+UNIT_TESTS/t_wbstr_append_l01.ali UNIT_TESTS/t_wbstr_append_l01.o \
+UNIT_TESTS/t_wbstr_append_l02 UNIT_TESTS/t_wbstr_append_l02.ali \
+UNIT_TESTS/t_wbstr_append_l02.o UNIT_TESTS/t_wbstr_append_l03 \
+UNIT_TESTS/t_wbstr_append_l03.ali UNIT_TESTS/t_wbstr_append_l03.o \
+UNIT_TESTS/t_wbstr_append_lb01 UNIT_TESTS/t_wbstr_append_lb01.ali \
+UNIT_TESTS/t_wbstr_append_lb01.o UNIT_TESTS/t_wbstr_append_lb02 \
+UNIT_TESTS/t_wbstr_append_lb02.ali UNIT_TESTS/t_wbstr_append_lb02.o \
+UNIT_TESTS/t_wbstr_append_lb03 UNIT_TESTS/t_wbstr_append_lb03.ali \
+UNIT_TESTS/t_wbstr_append_lb03.o UNIT_TESTS/t_wbstr_append_r01 \
+UNIT_TESTS/t_wbstr_append_r01.ali UNIT_TESTS/t_wbstr_append_r01.o \
+UNIT_TESTS/t_wbstr_append_r02 UNIT_TESTS/t_wbstr_append_r02.ali \
+UNIT_TESTS/t_wbstr_append_r02.o UNIT_TESTS/t_wbstr_append_r03 \
+UNIT_TESTS/t_wbstr_append_r03.ali UNIT_TESTS/t_wbstr_append_r03.o \
+UNIT_TESTS/t_wbstr_append_rb01 UNIT_TESTS/t_wbstr_append_rb01.ali \
+UNIT_TESTS/t_wbstr_append_rb01.o UNIT_TESTS/t_wbstr_append_rb02 \
+UNIT_TESTS/t_wbstr_append_rb02.ali UNIT_TESTS/t_wbstr_append_rb02.o \
+UNIT_TESTS/t_wbstr_append_rb03 UNIT_TESTS/t_wbstr_append_rb03.ali \
+UNIT_TESTS/t_wbstr_append_rb03.o UNIT_TESTS/t_wbstr_element_01 \
+UNIT_TESTS/t_wbstr_element_01.ali UNIT_TESTS/t_wbstr_element_01.o \
+UNIT_TESTS/t_wbstr_element_02 UNIT_TESTS/t_wbstr_element_02.ali \
+UNIT_TESTS/t_wbstr_element_02.o UNIT_TESTS/t_wbstr_equivalent_01 \
+UNIT_TESTS/t_wbstr_equivalent_01.ali UNIT_TESTS/t_wbstr_equivalent_01.o \
+UNIT_TESTS/t_wbstr_init_01 UNIT_TESTS/t_wbstr_init_01.ali \
+UNIT_TESTS/t_wbstr_init_01.o UNIT_TESTS/t_wbstr_init_02 \
+UNIT_TESTS/t_wbstr_init_02.ali UNIT_TESTS/t_wbstr_init_02.o \
+UNIT_TESTS/t_wbstr_slice_01 UNIT_TESTS/t_wbstr_slice_01.ali \
+UNIT_TESTS/t_wbstr_slice_01.o UNIT_TESTS/t_wbstr_slice_02 \
+UNIT_TESTS/t_wbstr_slice_02.ali UNIT_TESTS/t_wbstr_slice_02.o \
+UNIT_TESTS/t_wbstr_truncate_01 UNIT_TESTS/t_wbstr_truncate_01.ali \
+UNIT_TESTS/t_wbstr_truncate_01.o UNIT_TESTS/t_wwbstr_append_01 \
+UNIT_TESTS/t_wwbstr_append_01.ali UNIT_TESTS/t_wwbstr_append_01.o \
+UNIT_TESTS/t_wwbstr_append_e01 UNIT_TESTS/t_wwbstr_append_e01.ali \
+UNIT_TESTS/t_wwbstr_append_e01.o UNIT_TESTS/t_wwbstr_append_l01 \
+UNIT_TESTS/t_wwbstr_append_l01.ali UNIT_TESTS/t_wwbstr_append_l01.o \
+UNIT_TESTS/t_wwbstr_append_l02 UNIT_TESTS/t_wwbstr_append_l02.ali \
+UNIT_TESTS/t_wwbstr_append_l02.o UNIT_TESTS/t_wwbstr_append_l03 \
+UNIT_TESTS/t_wwbstr_append_l03.ali UNIT_TESTS/t_wwbstr_append_l03.o \
+UNIT_TESTS/t_wwbstr_append_lb01 UNIT_TESTS/t_wwbstr_append_lb01.ali \
+UNIT_TESTS/t_wwbstr_append_lb01.o UNIT_TESTS/t_wwbstr_append_lb02 \
+UNIT_TESTS/t_wwbstr_append_lb02.ali UNIT_TESTS/t_wwbstr_append_lb02.o \
+UNIT_TESTS/t_wwbstr_append_lb03 UNIT_TESTS/t_wwbstr_append_lb03.ali \
+UNIT_TESTS/t_wwbstr_append_lb03.o UNIT_TESTS/t_wwbstr_append_r01 \
+UNIT_TESTS/t_wwbstr_append_r01.ali UNIT_TESTS/t_wwbstr_append_r01.o \
+UNIT_TESTS/t_wwbstr_append_r02 UNIT_TESTS/t_wwbstr_append_r02.ali \
+UNIT_TESTS/t_wwbstr_append_r02.o UNIT_TESTS/t_wwbstr_append_r03 \
+UNIT_TESTS/t_wwbstr_append_r03.ali UNIT_TESTS/t_wwbstr_append_r03.o \
+UNIT_TESTS/t_wwbstr_append_rb01 UNIT_TESTS/t_wwbstr_append_rb01.ali \
+UNIT_TESTS/t_wwbstr_append_rb01.o UNIT_TESTS/t_wwbstr_append_rb02 \
+UNIT_TESTS/t_wwbstr_append_rb02.ali UNIT_TESTS/t_wwbstr_append_rb02.o \
+UNIT_TESTS/t_wwbstr_append_rb03 UNIT_TESTS/t_wwbstr_append_rb03.ali \
+UNIT_TESTS/t_wwbstr_append_rb03.o UNIT_TESTS/t_wwbstr_element_01 \
+UNIT_TESTS/t_wwbstr_element_01.ali UNIT_TESTS/t_wwbstr_element_01.o \
+UNIT_TESTS/t_wwbstr_element_02 UNIT_TESTS/t_wwbstr_element_02.ali \
+UNIT_TESTS/t_wwbstr_element_02.o UNIT_TESTS/t_wwbstr_equivalent_01 \
+UNIT_TESTS/t_wwbstr_equivalent_01.ali UNIT_TESTS/t_wwbstr_equivalent_01.o \
+UNIT_TESTS/t_wwbstr_init_01 UNIT_TESTS/t_wwbstr_init_01.ali \
+UNIT_TESTS/t_wwbstr_init_01.o UNIT_TESTS/t_wwbstr_init_02 \
+UNIT_TESTS/t_wwbstr_init_02.ali UNIT_TESTS/t_wwbstr_init_02.o \
+UNIT_TESTS/t_wwbstr_slice_01 UNIT_TESTS/t_wwbstr_slice_01.ali \
+UNIT_TESTS/t_wwbstr_slice_01.o UNIT_TESTS/t_wwbstr_slice_02 \
+UNIT_TESTS/t_wwbstr_slice_02.ali UNIT_TESTS/t_wwbstr_slice_02.o \
+UNIT_TESTS/t_wwbstr_truncate_01 UNIT_TESTS/t_wwbstr_truncate_01.ali \
+UNIT_TESTS/t_wwbstr_truncate_01.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
 cgbc-bounded_generic_strings.ali cgbc-bounded_generic_strings.o \
 cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.ali \
 cgbc-bounded_stacks.o cgbc-bounded_strings.ali cgbc-bounded_strings.o \
@@ -269,6 +368,800 @@ ada-compile UNIT_TESTS/t_bs_03.adb UNIT_TESTS/bs_support.ali cgbc.ali \
 UNIT_TESTS/test.ali
 	./ada-compile UNIT_TESTS/t_bs_03.adb
 
+UNIT_TESTS/t_bstr_append_01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_01.ald \
+UNIT_TESTS/t_bstr_append_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_01.ali
+	./ada-link UNIT_TESTS/t_bstr_append_01 UNIT_TESTS/t_bstr_append_01.ali
+
+UNIT_TESTS/t_bstr_append_01.o UNIT_TESTS/t_bstr_append_01.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_01.adb
+
+UNIT_TESTS/t_bstr_append_e01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_e01.ald \
+UNIT_TESTS/t_bstr_append_e01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_e01.ali
+	./ada-link UNIT_TESTS/t_bstr_append_e01 UNIT_TESTS/t_bstr_append_e01.ali
+
+UNIT_TESTS/t_bstr_append_e01.o UNIT_TESTS/t_bstr_append_e01.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_e01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_e01.adb
+
+UNIT_TESTS/t_bstr_append_l01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_l01.ald \
+UNIT_TESTS/t_bstr_append_l01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_l01.ali
+	./ada-link UNIT_TESTS/t_bstr_append_l01 UNIT_TESTS/t_bstr_append_l01.ali
+
+UNIT_TESTS/t_bstr_append_l01.o UNIT_TESTS/t_bstr_append_l01.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_l01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_l01.adb
+
+UNIT_TESTS/t_bstr_append_l02:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_l02.ald \
+UNIT_TESTS/t_bstr_append_l02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_l02.ali
+	./ada-link UNIT_TESTS/t_bstr_append_l02 UNIT_TESTS/t_bstr_append_l02.ali
+
+UNIT_TESTS/t_bstr_append_l02.o UNIT_TESTS/t_bstr_append_l02.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_l02.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_l02.adb
+
+UNIT_TESTS/t_bstr_append_l03:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_l03.ald \
+UNIT_TESTS/t_bstr_append_l03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_l03.ali
+	./ada-link UNIT_TESTS/t_bstr_append_l03 UNIT_TESTS/t_bstr_append_l03.ali
+
+UNIT_TESTS/t_bstr_append_l03.o UNIT_TESTS/t_bstr_append_l03.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_l03.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_l03.adb
+
+UNIT_TESTS/t_bstr_append_lb01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_lb01.ald \
+UNIT_TESTS/t_bstr_append_lb01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_lb01.ali
+	./ada-link UNIT_TESTS/t_bstr_append_lb01 UNIT_TESTS/t_bstr_append_lb01.ali
+
+UNIT_TESTS/t_bstr_append_lb01.o UNIT_TESTS/t_bstr_append_lb01.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_lb01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_lb01.adb
+
+UNIT_TESTS/t_bstr_append_lb02:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_lb02.ald \
+UNIT_TESTS/t_bstr_append_lb02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_lb02.ali
+	./ada-link UNIT_TESTS/t_bstr_append_lb02 UNIT_TESTS/t_bstr_append_lb02.ali
+
+UNIT_TESTS/t_bstr_append_lb02.o UNIT_TESTS/t_bstr_append_lb02.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_lb02.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_lb02.adb
+
+UNIT_TESTS/t_bstr_append_lb03:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_lb03.ald \
+UNIT_TESTS/t_bstr_append_lb03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_lb03.ali
+	./ada-link UNIT_TESTS/t_bstr_append_lb03 UNIT_TESTS/t_bstr_append_lb03.ali
+
+UNIT_TESTS/t_bstr_append_lb03.o UNIT_TESTS/t_bstr_append_lb03.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_lb03.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_lb03.adb
+
+UNIT_TESTS/t_bstr_append_r01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_r01.ald \
+UNIT_TESTS/t_bstr_append_r01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_r01.ali
+	./ada-link UNIT_TESTS/t_bstr_append_r01 UNIT_TESTS/t_bstr_append_r01.ali
+
+UNIT_TESTS/t_bstr_append_r01.o UNIT_TESTS/t_bstr_append_r01.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_r01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_r01.adb
+
+UNIT_TESTS/t_bstr_append_r02:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_r02.ald \
+UNIT_TESTS/t_bstr_append_r02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_r02.ali
+	./ada-link UNIT_TESTS/t_bstr_append_r02 UNIT_TESTS/t_bstr_append_r02.ali
+
+UNIT_TESTS/t_bstr_append_r02.o UNIT_TESTS/t_bstr_append_r02.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_r02.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_r02.adb
+
+UNIT_TESTS/t_bstr_append_r03:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_r03.ald \
+UNIT_TESTS/t_bstr_append_r03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_r03.ali
+	./ada-link UNIT_TESTS/t_bstr_append_r03 UNIT_TESTS/t_bstr_append_r03.ali
+
+UNIT_TESTS/t_bstr_append_r03.o UNIT_TESTS/t_bstr_append_r03.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_r03.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_r03.adb
+
+UNIT_TESTS/t_bstr_append_rb01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_rb01.ald \
+UNIT_TESTS/t_bstr_append_rb01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_rb01.ali
+	./ada-link UNIT_TESTS/t_bstr_append_rb01 UNIT_TESTS/t_bstr_append_rb01.ali
+
+UNIT_TESTS/t_bstr_append_rb01.o UNIT_TESTS/t_bstr_append_rb01.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_rb01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_rb01.adb
+
+UNIT_TESTS/t_bstr_append_rb02:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_rb02.ald \
+UNIT_TESTS/t_bstr_append_rb02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_rb02.ali
+	./ada-link UNIT_TESTS/t_bstr_append_rb02 UNIT_TESTS/t_bstr_append_rb02.ali
+
+UNIT_TESTS/t_bstr_append_rb02.o UNIT_TESTS/t_bstr_append_rb02.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_rb02.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_rb02.adb
+
+UNIT_TESTS/t_bstr_append_rb03:\
+ada-bind ada-link UNIT_TESTS/t_bstr_append_rb03.ald \
+UNIT_TESTS/t_bstr_append_rb03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_append_rb03.ali
+	./ada-link UNIT_TESTS/t_bstr_append_rb03 UNIT_TESTS/t_bstr_append_rb03.ali
+
+UNIT_TESTS/t_bstr_append_rb03.o UNIT_TESTS/t_bstr_append_rb03.ali:\
+ada-compile UNIT_TESTS/t_bstr_append_rb03.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_append_rb03.adb
+
+UNIT_TESTS/t_bstr_element_01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_element_01.ald \
+UNIT_TESTS/t_bstr_element_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_element_01.ali
+	./ada-link UNIT_TESTS/t_bstr_element_01 UNIT_TESTS/t_bstr_element_01.ali
+
+UNIT_TESTS/t_bstr_element_01.o UNIT_TESTS/t_bstr_element_01.ali:\
+ada-compile UNIT_TESTS/t_bstr_element_01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_element_01.adb
+
+UNIT_TESTS/t_bstr_element_02:\
+ada-bind ada-link UNIT_TESTS/t_bstr_element_02.ald \
+UNIT_TESTS/t_bstr_element_02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_element_02.ali
+	./ada-link UNIT_TESTS/t_bstr_element_02 UNIT_TESTS/t_bstr_element_02.ali
+
+UNIT_TESTS/t_bstr_element_02.o UNIT_TESTS/t_bstr_element_02.ali:\
+ada-compile UNIT_TESTS/t_bstr_element_02.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_element_02.adb
+
+UNIT_TESTS/t_bstr_equivalent_01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_equivalent_01.ald \
+UNIT_TESTS/t_bstr_equivalent_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_equivalent_01.ali
+	./ada-link UNIT_TESTS/t_bstr_equivalent_01 UNIT_TESTS/t_bstr_equivalent_01.ali
+
+UNIT_TESTS/t_bstr_equivalent_01.o UNIT_TESTS/t_bstr_equivalent_01.ali:\
+ada-compile UNIT_TESTS/t_bstr_equivalent_01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_equivalent_01.adb
+
+UNIT_TESTS/t_bstr_init_01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_init_01.ald UNIT_TESTS/t_bstr_init_01.ali \
+cgbc-bounded_generic_strings.ali cgbc-bounded_strings.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_init_01.ali
+	./ada-link UNIT_TESTS/t_bstr_init_01 UNIT_TESTS/t_bstr_init_01.ali
+
+UNIT_TESTS/t_bstr_init_01.o UNIT_TESTS/t_bstr_init_01.ali:\
+ada-compile UNIT_TESTS/t_bstr_init_01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_init_01.adb
+
+UNIT_TESTS/t_bstr_init_02:\
+ada-bind ada-link UNIT_TESTS/t_bstr_init_02.ald UNIT_TESTS/t_bstr_init_02.ali \
+cgbc-bounded_generic_strings.ali cgbc-bounded_strings.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_init_02.ali
+	./ada-link UNIT_TESTS/t_bstr_init_02 UNIT_TESTS/t_bstr_init_02.ali
+
+UNIT_TESTS/t_bstr_init_02.o UNIT_TESTS/t_bstr_init_02.ali:\
+ada-compile UNIT_TESTS/t_bstr_init_02.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_init_02.adb
+
+UNIT_TESTS/t_bstr_slice_01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_slice_01.ald UNIT_TESTS/t_bstr_slice_01.ali \
+cgbc-bounded_generic_strings.ali cgbc-bounded_strings.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_slice_01.ali
+	./ada-link UNIT_TESTS/t_bstr_slice_01 UNIT_TESTS/t_bstr_slice_01.ali
+
+UNIT_TESTS/t_bstr_slice_01.o UNIT_TESTS/t_bstr_slice_01.ali:\
+ada-compile UNIT_TESTS/t_bstr_slice_01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_slice_01.adb
+
+UNIT_TESTS/t_bstr_slice_02:\
+ada-bind ada-link UNIT_TESTS/t_bstr_slice_02.ald UNIT_TESTS/t_bstr_slice_02.ali \
+cgbc-bounded_generic_strings.ali cgbc-bounded_strings.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_slice_02.ali
+	./ada-link UNIT_TESTS/t_bstr_slice_02 UNIT_TESTS/t_bstr_slice_02.ali
+
+UNIT_TESTS/t_bstr_slice_02.o UNIT_TESTS/t_bstr_slice_02.ali:\
+ada-compile UNIT_TESTS/t_bstr_slice_02.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_slice_02.adb
+
+UNIT_TESTS/t_bstr_truncate_01:\
+ada-bind ada-link UNIT_TESTS/t_bstr_truncate_01.ald \
+UNIT_TESTS/t_bstr_truncate_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_bstr_truncate_01.ali
+	./ada-link UNIT_TESTS/t_bstr_truncate_01 UNIT_TESTS/t_bstr_truncate_01.ali
+
+UNIT_TESTS/t_bstr_truncate_01.o UNIT_TESTS/t_bstr_truncate_01.ali:\
+ada-compile UNIT_TESTS/t_bstr_truncate_01.adb cgbc-bounded_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_bstr_truncate_01.adb
+
+UNIT_TESTS/t_wbstr_append_01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_01.ald \
+UNIT_TESTS/t_wbstr_append_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_01.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_01 UNIT_TESTS/t_wbstr_append_01.ali
+
+UNIT_TESTS/t_wbstr_append_01.o UNIT_TESTS/t_wbstr_append_01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_01.adb
+
+UNIT_TESTS/t_wbstr_append_e01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_e01.ald \
+UNIT_TESTS/t_wbstr_append_e01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_e01.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_e01 UNIT_TESTS/t_wbstr_append_e01.ali
+
+UNIT_TESTS/t_wbstr_append_e01.o UNIT_TESTS/t_wbstr_append_e01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_e01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_e01.adb
+
+UNIT_TESTS/t_wbstr_append_l01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_l01.ald \
+UNIT_TESTS/t_wbstr_append_l01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_l01.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_l01 UNIT_TESTS/t_wbstr_append_l01.ali
+
+UNIT_TESTS/t_wbstr_append_l01.o UNIT_TESTS/t_wbstr_append_l01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_l01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_l01.adb
+
+UNIT_TESTS/t_wbstr_append_l02:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_l02.ald \
+UNIT_TESTS/t_wbstr_append_l02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_l02.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_l02 UNIT_TESTS/t_wbstr_append_l02.ali
+
+UNIT_TESTS/t_wbstr_append_l02.o UNIT_TESTS/t_wbstr_append_l02.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_l02.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_l02.adb
+
+UNIT_TESTS/t_wbstr_append_l03:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_l03.ald \
+UNIT_TESTS/t_wbstr_append_l03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_l03.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_l03 UNIT_TESTS/t_wbstr_append_l03.ali
+
+UNIT_TESTS/t_wbstr_append_l03.o UNIT_TESTS/t_wbstr_append_l03.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_l03.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_l03.adb
+
+UNIT_TESTS/t_wbstr_append_lb01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_lb01.ald \
+UNIT_TESTS/t_wbstr_append_lb01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_lb01.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_lb01 UNIT_TESTS/t_wbstr_append_lb01.ali
+
+UNIT_TESTS/t_wbstr_append_lb01.o UNIT_TESTS/t_wbstr_append_lb01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_lb01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_lb01.adb
+
+UNIT_TESTS/t_wbstr_append_lb02:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_lb02.ald \
+UNIT_TESTS/t_wbstr_append_lb02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_lb02.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_lb02 UNIT_TESTS/t_wbstr_append_lb02.ali
+
+UNIT_TESTS/t_wbstr_append_lb02.o UNIT_TESTS/t_wbstr_append_lb02.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_lb02.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_lb02.adb
+
+UNIT_TESTS/t_wbstr_append_lb03:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_lb03.ald \
+UNIT_TESTS/t_wbstr_append_lb03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_lb03.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_lb03 UNIT_TESTS/t_wbstr_append_lb03.ali
+
+UNIT_TESTS/t_wbstr_append_lb03.o UNIT_TESTS/t_wbstr_append_lb03.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_lb03.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_lb03.adb
+
+UNIT_TESTS/t_wbstr_append_r01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_r01.ald \
+UNIT_TESTS/t_wbstr_append_r01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_r01.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_r01 UNIT_TESTS/t_wbstr_append_r01.ali
+
+UNIT_TESTS/t_wbstr_append_r01.o UNIT_TESTS/t_wbstr_append_r01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_r01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_r01.adb
+
+UNIT_TESTS/t_wbstr_append_r02:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_r02.ald \
+UNIT_TESTS/t_wbstr_append_r02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_r02.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_r02 UNIT_TESTS/t_wbstr_append_r02.ali
+
+UNIT_TESTS/t_wbstr_append_r02.o UNIT_TESTS/t_wbstr_append_r02.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_r02.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_r02.adb
+
+UNIT_TESTS/t_wbstr_append_r03:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_r03.ald \
+UNIT_TESTS/t_wbstr_append_r03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_r03.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_r03 UNIT_TESTS/t_wbstr_append_r03.ali
+
+UNIT_TESTS/t_wbstr_append_r03.o UNIT_TESTS/t_wbstr_append_r03.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_r03.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_r03.adb
+
+UNIT_TESTS/t_wbstr_append_rb01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_rb01.ald \
+UNIT_TESTS/t_wbstr_append_rb01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_rb01.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_rb01 UNIT_TESTS/t_wbstr_append_rb01.ali
+
+UNIT_TESTS/t_wbstr_append_rb01.o UNIT_TESTS/t_wbstr_append_rb01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_rb01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_rb01.adb
+
+UNIT_TESTS/t_wbstr_append_rb02:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_rb02.ald \
+UNIT_TESTS/t_wbstr_append_rb02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_rb02.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_rb02 UNIT_TESTS/t_wbstr_append_rb02.ali
+
+UNIT_TESTS/t_wbstr_append_rb02.o UNIT_TESTS/t_wbstr_append_rb02.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_rb02.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_rb02.adb
+
+UNIT_TESTS/t_wbstr_append_rb03:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_append_rb03.ald \
+UNIT_TESTS/t_wbstr_append_rb03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_append_rb03.ali
+	./ada-link UNIT_TESTS/t_wbstr_append_rb03 UNIT_TESTS/t_wbstr_append_rb03.ali
+
+UNIT_TESTS/t_wbstr_append_rb03.o UNIT_TESTS/t_wbstr_append_rb03.ali:\
+ada-compile UNIT_TESTS/t_wbstr_append_rb03.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_append_rb03.adb
+
+UNIT_TESTS/t_wbstr_element_01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_element_01.ald \
+UNIT_TESTS/t_wbstr_element_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_element_01.ali
+	./ada-link UNIT_TESTS/t_wbstr_element_01 UNIT_TESTS/t_wbstr_element_01.ali
+
+UNIT_TESTS/t_wbstr_element_01.o UNIT_TESTS/t_wbstr_element_01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_element_01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_element_01.adb
+
+UNIT_TESTS/t_wbstr_element_02:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_element_02.ald \
+UNIT_TESTS/t_wbstr_element_02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_element_02.ali
+	./ada-link UNIT_TESTS/t_wbstr_element_02 UNIT_TESTS/t_wbstr_element_02.ali
+
+UNIT_TESTS/t_wbstr_element_02.o UNIT_TESTS/t_wbstr_element_02.ali:\
+ada-compile UNIT_TESTS/t_wbstr_element_02.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_element_02.adb
+
+UNIT_TESTS/t_wbstr_equivalent_01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_equivalent_01.ald \
+UNIT_TESTS/t_wbstr_equivalent_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_equivalent_01.ali
+	./ada-link UNIT_TESTS/t_wbstr_equivalent_01 \
+UNIT_TESTS/t_wbstr_equivalent_01.ali
+
+UNIT_TESTS/t_wbstr_equivalent_01.o UNIT_TESTS/t_wbstr_equivalent_01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_equivalent_01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_equivalent_01.adb
+
+UNIT_TESTS/t_wbstr_init_01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_init_01.ald UNIT_TESTS/t_wbstr_init_01.ali \
+cgbc-bounded_generic_strings.ali cgbc-bounded_wide_strings.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_init_01.ali
+	./ada-link UNIT_TESTS/t_wbstr_init_01 UNIT_TESTS/t_wbstr_init_01.ali
+
+UNIT_TESTS/t_wbstr_init_01.o UNIT_TESTS/t_wbstr_init_01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_init_01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_init_01.adb
+
+UNIT_TESTS/t_wbstr_init_02:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_init_02.ald UNIT_TESTS/t_wbstr_init_02.ali \
+cgbc-bounded_generic_strings.ali cgbc-bounded_wide_strings.ali cgbc.ali \
+UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_init_02.ali
+	./ada-link UNIT_TESTS/t_wbstr_init_02 UNIT_TESTS/t_wbstr_init_02.ali
+
+UNIT_TESTS/t_wbstr_init_02.o UNIT_TESTS/t_wbstr_init_02.ali:\
+ada-compile UNIT_TESTS/t_wbstr_init_02.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_init_02.adb
+
+UNIT_TESTS/t_wbstr_slice_01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_slice_01.ald \
+UNIT_TESTS/t_wbstr_slice_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_slice_01.ali
+	./ada-link UNIT_TESTS/t_wbstr_slice_01 UNIT_TESTS/t_wbstr_slice_01.ali
+
+UNIT_TESTS/t_wbstr_slice_01.o UNIT_TESTS/t_wbstr_slice_01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_slice_01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_slice_01.adb
+
+UNIT_TESTS/t_wbstr_slice_02:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_slice_02.ald \
+UNIT_TESTS/t_wbstr_slice_02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_slice_02.ali
+	./ada-link UNIT_TESTS/t_wbstr_slice_02 UNIT_TESTS/t_wbstr_slice_02.ali
+
+UNIT_TESTS/t_wbstr_slice_02.o UNIT_TESTS/t_wbstr_slice_02.ali:\
+ada-compile UNIT_TESTS/t_wbstr_slice_02.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_slice_02.adb
+
+UNIT_TESTS/t_wbstr_truncate_01:\
+ada-bind ada-link UNIT_TESTS/t_wbstr_truncate_01.ald \
+UNIT_TESTS/t_wbstr_truncate_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wbstr_truncate_01.ali
+	./ada-link UNIT_TESTS/t_wbstr_truncate_01 UNIT_TESTS/t_wbstr_truncate_01.ali
+
+UNIT_TESTS/t_wbstr_truncate_01.o UNIT_TESTS/t_wbstr_truncate_01.ali:\
+ada-compile UNIT_TESTS/t_wbstr_truncate_01.adb cgbc-bounded_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wbstr_truncate_01.adb
+
+UNIT_TESTS/t_wwbstr_append_01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_01.ald \
+UNIT_TESTS/t_wwbstr_append_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_01 UNIT_TESTS/t_wwbstr_append_01.ali
+
+UNIT_TESTS/t_wwbstr_append_01.o UNIT_TESTS/t_wwbstr_append_01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_01.adb
+
+UNIT_TESTS/t_wwbstr_append_e01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_e01.ald \
+UNIT_TESTS/t_wwbstr_append_e01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_e01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_e01 UNIT_TESTS/t_wwbstr_append_e01.ali
+
+UNIT_TESTS/t_wwbstr_append_e01.o UNIT_TESTS/t_wwbstr_append_e01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_e01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_e01.adb
+
+UNIT_TESTS/t_wwbstr_append_l01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_l01.ald \
+UNIT_TESTS/t_wwbstr_append_l01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_l01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_l01 UNIT_TESTS/t_wwbstr_append_l01.ali
+
+UNIT_TESTS/t_wwbstr_append_l01.o UNIT_TESTS/t_wwbstr_append_l01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_l01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_l01.adb
+
+UNIT_TESTS/t_wwbstr_append_l02:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_l02.ald \
+UNIT_TESTS/t_wwbstr_append_l02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_l02.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_l02 UNIT_TESTS/t_wwbstr_append_l02.ali
+
+UNIT_TESTS/t_wwbstr_append_l02.o UNIT_TESTS/t_wwbstr_append_l02.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_l02.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_l02.adb
+
+UNIT_TESTS/t_wwbstr_append_l03:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_l03.ald \
+UNIT_TESTS/t_wwbstr_append_l03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_l03.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_l03 UNIT_TESTS/t_wwbstr_append_l03.ali
+
+UNIT_TESTS/t_wwbstr_append_l03.o UNIT_TESTS/t_wwbstr_append_l03.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_l03.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_l03.adb
+
+UNIT_TESTS/t_wwbstr_append_lb01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_lb01.ald \
+UNIT_TESTS/t_wwbstr_append_lb01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_lb01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_lb01 UNIT_TESTS/t_wwbstr_append_lb01.ali
+
+UNIT_TESTS/t_wwbstr_append_lb01.o UNIT_TESTS/t_wwbstr_append_lb01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_lb01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_lb01.adb
+
+UNIT_TESTS/t_wwbstr_append_lb02:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_lb02.ald \
+UNIT_TESTS/t_wwbstr_append_lb02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_lb02.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_lb02 UNIT_TESTS/t_wwbstr_append_lb02.ali
+
+UNIT_TESTS/t_wwbstr_append_lb02.o UNIT_TESTS/t_wwbstr_append_lb02.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_lb02.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_lb02.adb
+
+UNIT_TESTS/t_wwbstr_append_lb03:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_lb03.ald \
+UNIT_TESTS/t_wwbstr_append_lb03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_lb03.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_lb03 UNIT_TESTS/t_wwbstr_append_lb03.ali
+
+UNIT_TESTS/t_wwbstr_append_lb03.o UNIT_TESTS/t_wwbstr_append_lb03.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_lb03.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_lb03.adb
+
+UNIT_TESTS/t_wwbstr_append_r01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_r01.ald \
+UNIT_TESTS/t_wwbstr_append_r01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_r01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_r01 UNIT_TESTS/t_wwbstr_append_r01.ali
+
+UNIT_TESTS/t_wwbstr_append_r01.o UNIT_TESTS/t_wwbstr_append_r01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_r01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_r01.adb
+
+UNIT_TESTS/t_wwbstr_append_r02:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_r02.ald \
+UNIT_TESTS/t_wwbstr_append_r02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_r02.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_r02 UNIT_TESTS/t_wwbstr_append_r02.ali
+
+UNIT_TESTS/t_wwbstr_append_r02.o UNIT_TESTS/t_wwbstr_append_r02.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_r02.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_r02.adb
+
+UNIT_TESTS/t_wwbstr_append_r03:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_r03.ald \
+UNIT_TESTS/t_wwbstr_append_r03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_r03.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_r03 UNIT_TESTS/t_wwbstr_append_r03.ali
+
+UNIT_TESTS/t_wwbstr_append_r03.o UNIT_TESTS/t_wwbstr_append_r03.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_r03.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_r03.adb
+
+UNIT_TESTS/t_wwbstr_append_rb01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_rb01.ald \
+UNIT_TESTS/t_wwbstr_append_rb01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_rb01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_rb01 UNIT_TESTS/t_wwbstr_append_rb01.ali
+
+UNIT_TESTS/t_wwbstr_append_rb01.o UNIT_TESTS/t_wwbstr_append_rb01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_rb01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_rb01.adb
+
+UNIT_TESTS/t_wwbstr_append_rb02:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_rb02.ald \
+UNIT_TESTS/t_wwbstr_append_rb02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_rb02.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_rb02 UNIT_TESTS/t_wwbstr_append_rb02.ali
+
+UNIT_TESTS/t_wwbstr_append_rb02.o UNIT_TESTS/t_wwbstr_append_rb02.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_rb02.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_rb02.adb
+
+UNIT_TESTS/t_wwbstr_append_rb03:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_append_rb03.ald \
+UNIT_TESTS/t_wwbstr_append_rb03.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_append_rb03.ali
+	./ada-link UNIT_TESTS/t_wwbstr_append_rb03 UNIT_TESTS/t_wwbstr_append_rb03.ali
+
+UNIT_TESTS/t_wwbstr_append_rb03.o UNIT_TESTS/t_wwbstr_append_rb03.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_append_rb03.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_append_rb03.adb
+
+UNIT_TESTS/t_wwbstr_element_01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_element_01.ald \
+UNIT_TESTS/t_wwbstr_element_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_element_01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_element_01 UNIT_TESTS/t_wwbstr_element_01.ali
+
+UNIT_TESTS/t_wwbstr_element_01.o UNIT_TESTS/t_wwbstr_element_01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_element_01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_element_01.adb
+
+UNIT_TESTS/t_wwbstr_element_02:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_element_02.ald \
+UNIT_TESTS/t_wwbstr_element_02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_element_02.ali
+	./ada-link UNIT_TESTS/t_wwbstr_element_02 UNIT_TESTS/t_wwbstr_element_02.ali
+
+UNIT_TESTS/t_wwbstr_element_02.o UNIT_TESTS/t_wwbstr_element_02.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_element_02.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_element_02.adb
+
+UNIT_TESTS/t_wwbstr_equivalent_01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_equivalent_01.ald \
+UNIT_TESTS/t_wwbstr_equivalent_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_equivalent_01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_equivalent_01 \
+UNIT_TESTS/t_wwbstr_equivalent_01.ali
+
+UNIT_TESTS/t_wwbstr_equivalent_01.o UNIT_TESTS/t_wwbstr_equivalent_01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_equivalent_01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_equivalent_01.adb
+
+UNIT_TESTS/t_wwbstr_init_01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_init_01.ald \
+UNIT_TESTS/t_wwbstr_init_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_init_01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_init_01 UNIT_TESTS/t_wwbstr_init_01.ali
+
+UNIT_TESTS/t_wwbstr_init_01.o UNIT_TESTS/t_wwbstr_init_01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_init_01.adb cgbc-bounded_wide_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_init_01.adb
+
+UNIT_TESTS/t_wwbstr_init_02:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_init_02.ald \
+UNIT_TESTS/t_wwbstr_init_02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_init_02.ali
+	./ada-link UNIT_TESTS/t_wwbstr_init_02 UNIT_TESTS/t_wwbstr_init_02.ali
+
+UNIT_TESTS/t_wwbstr_init_02.o UNIT_TESTS/t_wwbstr_init_02.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_init_02.adb cgbc-bounded_wide_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_init_02.adb
+
+UNIT_TESTS/t_wwbstr_slice_01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_slice_01.ald \
+UNIT_TESTS/t_wwbstr_slice_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_slice_01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_slice_01 UNIT_TESTS/t_wwbstr_slice_01.ali
+
+UNIT_TESTS/t_wwbstr_slice_01.o UNIT_TESTS/t_wwbstr_slice_01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_slice_01.adb cgbc-bounded_wide_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_slice_01.adb
+
+UNIT_TESTS/t_wwbstr_slice_02:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_slice_02.ald \
+UNIT_TESTS/t_wwbstr_slice_02.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_slice_02.ali
+	./ada-link UNIT_TESTS/t_wwbstr_slice_02 UNIT_TESTS/t_wwbstr_slice_02.ali
+
+UNIT_TESTS/t_wwbstr_slice_02.o UNIT_TESTS/t_wwbstr_slice_02.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_slice_02.adb cgbc-bounded_wide_wide_strings.ali \
+UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_slice_02.adb
+
+UNIT_TESTS/t_wwbstr_truncate_01:\
+ada-bind ada-link UNIT_TESTS/t_wwbstr_truncate_01.ald \
+UNIT_TESTS/t_wwbstr_truncate_01.ali cgbc-bounded_generic_strings.ali \
+cgbc-bounded_wide_wide_strings.ali cgbc.ali UNIT_TESTS/test.ali
+	./ada-bind UNIT_TESTS/t_wwbstr_truncate_01.ali
+	./ada-link UNIT_TESTS/t_wwbstr_truncate_01 UNIT_TESTS/t_wwbstr_truncate_01.ali
+
+UNIT_TESTS/t_wwbstr_truncate_01.o UNIT_TESTS/t_wwbstr_truncate_01.ali:\
+ada-compile UNIT_TESTS/t_wwbstr_truncate_01.adb \
+cgbc-bounded_wide_wide_strings.ali UNIT_TESTS/test.ali
+	./ada-compile UNIT_TESTS/t_wwbstr_truncate_01.adb
+
 UNIT_TESTS/test.o UNIT_TESTS/test.ali:\
 ada-compile UNIT_TESTS/test.adb UNIT_TESTS/test.ads
 	./ada-compile UNIT_TESTS/test.adb
@@ -349,11 +1242,11 @@ mk-adatype
 	./mk-adatype > conf-adatype.tmp && mv conf-adatype.tmp conf-adatype
 
 conf-cctype:\
-conf-cc conf-cc mk-cctype
+conf-cc mk-cctype
 	./mk-cctype > conf-cctype.tmp && mv conf-cctype.tmp conf-cctype
 
 conf-ldtype:\
-conf-ld conf-ld mk-ldtype
+conf-ld mk-ldtype
 	./mk-ldtype > conf-ldtype.tmp && mv conf-ldtype.tmp conf-ldtype
 
 conf-systype:\
@@ -517,7 +1410,107 @@ obj_clean:
 	UNIT_TESTS/t_bs_01.ali
 	rm -f UNIT_TESTS/t_bs_01.o UNIT_TESTS/t_bs_02 UNIT_TESTS/t_bs_02.ali \
 	UNIT_TESTS/t_bs_02.o UNIT_TESTS/t_bs_03 UNIT_TESTS/t_bs_03.ali \
-	UNIT_TESTS/t_bs_03.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
+	UNIT_TESTS/t_bs_03.o UNIT_TESTS/t_bstr_append_01 \
+	UNIT_TESTS/t_bstr_append_01.ali UNIT_TESTS/t_bstr_append_01.o \
+	UNIT_TESTS/t_bstr_append_e01 UNIT_TESTS/t_bstr_append_e01.ali \
+	UNIT_TESTS/t_bstr_append_e01.o UNIT_TESTS/t_bstr_append_l01 \
+	UNIT_TESTS/t_bstr_append_l01.ali UNIT_TESTS/t_bstr_append_l01.o \
+	UNIT_TESTS/t_bstr_append_l02 UNIT_TESTS/t_bstr_append_l02.ali \
+	UNIT_TESTS/t_bstr_append_l02.o UNIT_TESTS/t_bstr_append_l03 \
+	UNIT_TESTS/t_bstr_append_l03.ali UNIT_TESTS/t_bstr_append_l03.o \
+	UNIT_TESTS/t_bstr_append_lb01 UNIT_TESTS/t_bstr_append_lb01.ali \
+	UNIT_TESTS/t_bstr_append_lb01.o UNIT_TESTS/t_bstr_append_lb02 \
+	UNIT_TESTS/t_bstr_append_lb02.ali UNIT_TESTS/t_bstr_append_lb02.o \
+	UNIT_TESTS/t_bstr_append_lb03 UNIT_TESTS/t_bstr_append_lb03.ali \
+	UNIT_TESTS/t_bstr_append_lb03.o UNIT_TESTS/t_bstr_append_r01 \
+	UNIT_TESTS/t_bstr_append_r01.ali UNIT_TESTS/t_bstr_append_r01.o \
+	UNIT_TESTS/t_bstr_append_r02 UNIT_TESTS/t_bstr_append_r02.ali
+	rm -f UNIT_TESTS/t_bstr_append_r02.o UNIT_TESTS/t_bstr_append_r03 \
+	UNIT_TESTS/t_bstr_append_r03.ali UNIT_TESTS/t_bstr_append_r03.o \
+	UNIT_TESTS/t_bstr_append_rb01 UNIT_TESTS/t_bstr_append_rb01.ali \
+	UNIT_TESTS/t_bstr_append_rb01.o UNIT_TESTS/t_bstr_append_rb02 \
+	UNIT_TESTS/t_bstr_append_rb02.ali UNIT_TESTS/t_bstr_append_rb02.o \
+	UNIT_TESTS/t_bstr_append_rb03 UNIT_TESTS/t_bstr_append_rb03.ali \
+	UNIT_TESTS/t_bstr_append_rb03.o UNIT_TESTS/t_bstr_element_01 \
+	UNIT_TESTS/t_bstr_element_01.ali UNIT_TESTS/t_bstr_element_01.o \
+	UNIT_TESTS/t_bstr_element_02 UNIT_TESTS/t_bstr_element_02.ali \
+	UNIT_TESTS/t_bstr_element_02.o UNIT_TESTS/t_bstr_equivalent_01 \
+	UNIT_TESTS/t_bstr_equivalent_01.ali UNIT_TESTS/t_bstr_equivalent_01.o \
+	UNIT_TESTS/t_bstr_init_01 UNIT_TESTS/t_bstr_init_01.ali \
+	UNIT_TESTS/t_bstr_init_01.o UNIT_TESTS/t_bstr_init_02 \
+	UNIT_TESTS/t_bstr_init_02.ali UNIT_TESTS/t_bstr_init_02.o \
+	UNIT_TESTS/t_bstr_slice_01 UNIT_TESTS/t_bstr_slice_01.ali \
+	UNIT_TESTS/t_bstr_slice_01.o UNIT_TESTS/t_bstr_slice_02 \
+	UNIT_TESTS/t_bstr_slice_02.ali UNIT_TESTS/t_bstr_slice_02.o
+	rm -f UNIT_TESTS/t_bstr_truncate_01 UNIT_TESTS/t_bstr_truncate_01.ali \
+	UNIT_TESTS/t_bstr_truncate_01.o UNIT_TESTS/t_wbstr_append_01 \
+	UNIT_TESTS/t_wbstr_append_01.ali UNIT_TESTS/t_wbstr_append_01.o \
+	UNIT_TESTS/t_wbstr_append_e01 UNIT_TESTS/t_wbstr_append_e01.ali \
+	UNIT_TESTS/t_wbstr_append_e01.o UNIT_TESTS/t_wbstr_append_l01 \
+	UNIT_TESTS/t_wbstr_append_l01.ali UNIT_TESTS/t_wbstr_append_l01.o \
+	UNIT_TESTS/t_wbstr_append_l02 UNIT_TESTS/t_wbstr_append_l02.ali \
+	UNIT_TESTS/t_wbstr_append_l02.o UNIT_TESTS/t_wbstr_append_l03 \
+	UNIT_TESTS/t_wbstr_append_l03.ali UNIT_TESTS/t_wbstr_append_l03.o \
+	UNIT_TESTS/t_wbstr_append_lb01 UNIT_TESTS/t_wbstr_append_lb01.ali \
+	UNIT_TESTS/t_wbstr_append_lb01.o UNIT_TESTS/t_wbstr_append_lb02 \
+	UNIT_TESTS/t_wbstr_append_lb02.ali UNIT_TESTS/t_wbstr_append_lb02.o \
+	UNIT_TESTS/t_wbstr_append_lb03 UNIT_TESTS/t_wbstr_append_lb03.ali \
+	UNIT_TESTS/t_wbstr_append_lb03.o UNIT_TESTS/t_wbstr_append_r01 \
+	UNIT_TESTS/t_wbstr_append_r01.ali UNIT_TESTS/t_wbstr_append_r01.o \
+	UNIT_TESTS/t_wbstr_append_r02 UNIT_TESTS/t_wbstr_append_r02.ali
+	rm -f UNIT_TESTS/t_wbstr_append_r02.o UNIT_TESTS/t_wbstr_append_r03 \
+	UNIT_TESTS/t_wbstr_append_r03.ali UNIT_TESTS/t_wbstr_append_r03.o \
+	UNIT_TESTS/t_wbstr_append_rb01 UNIT_TESTS/t_wbstr_append_rb01.ali \
+	UNIT_TESTS/t_wbstr_append_rb01.o UNIT_TESTS/t_wbstr_append_rb02 \
+	UNIT_TESTS/t_wbstr_append_rb02.ali UNIT_TESTS/t_wbstr_append_rb02.o \
+	UNIT_TESTS/t_wbstr_append_rb03 UNIT_TESTS/t_wbstr_append_rb03.ali \
+	UNIT_TESTS/t_wbstr_append_rb03.o UNIT_TESTS/t_wbstr_element_01 \
+	UNIT_TESTS/t_wbstr_element_01.ali UNIT_TESTS/t_wbstr_element_01.o \
+	UNIT_TESTS/t_wbstr_element_02 UNIT_TESTS/t_wbstr_element_02.ali \
+	UNIT_TESTS/t_wbstr_element_02.o UNIT_TESTS/t_wbstr_equivalent_01 \
+	UNIT_TESTS/t_wbstr_equivalent_01.ali UNIT_TESTS/t_wbstr_equivalent_01.o \
+	UNIT_TESTS/t_wbstr_init_01 UNIT_TESTS/t_wbstr_init_01.ali \
+	UNIT_TESTS/t_wbstr_init_01.o UNIT_TESTS/t_wbstr_init_02 \
+	UNIT_TESTS/t_wbstr_init_02.ali UNIT_TESTS/t_wbstr_init_02.o \
+	UNIT_TESTS/t_wbstr_slice_01 UNIT_TESTS/t_wbstr_slice_01.ali \
+	UNIT_TESTS/t_wbstr_slice_01.o UNIT_TESTS/t_wbstr_slice_02 \
+	UNIT_TESTS/t_wbstr_slice_02.ali
+	rm -f UNIT_TESTS/t_wbstr_slice_02.o UNIT_TESTS/t_wbstr_truncate_01 \
+	UNIT_TESTS/t_wbstr_truncate_01.ali UNIT_TESTS/t_wbstr_truncate_01.o \
+	UNIT_TESTS/t_wwbstr_append_01 UNIT_TESTS/t_wwbstr_append_01.ali \
+	UNIT_TESTS/t_wwbstr_append_01.o UNIT_TESTS/t_wwbstr_append_e01 \
+	UNIT_TESTS/t_wwbstr_append_e01.ali UNIT_TESTS/t_wwbstr_append_e01.o \
+	UNIT_TESTS/t_wwbstr_append_l01 UNIT_TESTS/t_wwbstr_append_l01.ali \
+	UNIT_TESTS/t_wwbstr_append_l01.o UNIT_TESTS/t_wwbstr_append_l02 \
+	UNIT_TESTS/t_wwbstr_append_l02.ali UNIT_TESTS/t_wwbstr_append_l02.o \
+	UNIT_TESTS/t_wwbstr_append_l03 UNIT_TESTS/t_wwbstr_append_l03.ali \
+	UNIT_TESTS/t_wwbstr_append_l03.o UNIT_TESTS/t_wwbstr_append_lb01 \
+	UNIT_TESTS/t_wwbstr_append_lb01.ali UNIT_TESTS/t_wwbstr_append_lb01.o \
+	UNIT_TESTS/t_wwbstr_append_lb02 UNIT_TESTS/t_wwbstr_append_lb02.ali \
+	UNIT_TESTS/t_wwbstr_append_lb02.o UNIT_TESTS/t_wwbstr_append_lb03 \
+	UNIT_TESTS/t_wwbstr_append_lb03.ali UNIT_TESTS/t_wwbstr_append_lb03.o \
+	UNIT_TESTS/t_wwbstr_append_r01 UNIT_TESTS/t_wwbstr_append_r01.ali \
+	UNIT_TESTS/t_wwbstr_append_r01.o
+	rm -f UNIT_TESTS/t_wwbstr_append_r02 UNIT_TESTS/t_wwbstr_append_r02.ali \
+	UNIT_TESTS/t_wwbstr_append_r02.o UNIT_TESTS/t_wwbstr_append_r03 \
+	UNIT_TESTS/t_wwbstr_append_r03.ali UNIT_TESTS/t_wwbstr_append_r03.o \
+	UNIT_TESTS/t_wwbstr_append_rb01 UNIT_TESTS/t_wwbstr_append_rb01.ali \
+	UNIT_TESTS/t_wwbstr_append_rb01.o UNIT_TESTS/t_wwbstr_append_rb02 \
+	UNIT_TESTS/t_wwbstr_append_rb02.ali UNIT_TESTS/t_wwbstr_append_rb02.o \
+	UNIT_TESTS/t_wwbstr_append_rb03 UNIT_TESTS/t_wwbstr_append_rb03.ali \
+	UNIT_TESTS/t_wwbstr_append_rb03.o UNIT_TESTS/t_wwbstr_element_01 \
+	UNIT_TESTS/t_wwbstr_element_01.ali UNIT_TESTS/t_wwbstr_element_01.o \
+	UNIT_TESTS/t_wwbstr_element_02 UNIT_TESTS/t_wwbstr_element_02.ali \
+	UNIT_TESTS/t_wwbstr_element_02.o UNIT_TESTS/t_wwbstr_equivalent_01 \
+	UNIT_TESTS/t_wwbstr_equivalent_01.ali UNIT_TESTS/t_wwbstr_equivalent_01.o \
+	UNIT_TESTS/t_wwbstr_init_01 UNIT_TESTS/t_wwbstr_init_01.ali \
+	UNIT_TESTS/t_wwbstr_init_01.o UNIT_TESTS/t_wwbstr_init_02 \
+	UNIT_TESTS/t_wwbstr_init_02.ali UNIT_TESTS/t_wwbstr_init_02.o \
+	UNIT_TESTS/t_wwbstr_slice_01 UNIT_TESTS/t_wwbstr_slice_01.ali
+	rm -f UNIT_TESTS/t_wwbstr_slice_01.o UNIT_TESTS/t_wwbstr_slice_02 \
+	UNIT_TESTS/t_wwbstr_slice_02.ali UNIT_TESTS/t_wwbstr_slice_02.o \
+	UNIT_TESTS/t_wwbstr_truncate_01 UNIT_TESTS/t_wwbstr_truncate_01.ali \
+	UNIT_TESTS/t_wwbstr_truncate_01.o UNIT_TESTS/test.ali UNIT_TESTS/test.o \
 	cgbc-bounded_generic_strings.ali cgbc-bounded_generic_strings.o \
 	cgbc-bounded_hashed_maps.ali cgbc-bounded_hashed_maps.o cgbc-bounded_stacks.ali \
 	cgbc-bounded_stacks.o cgbc-bounded_strings.ali cgbc-bounded_strings.o \
