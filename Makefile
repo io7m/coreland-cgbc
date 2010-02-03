@@ -155,6 +155,27 @@ tests:
 tests_clean:
 	(cd UNIT_TESTS && make clean)
 
+#----------------------------------------------------------------------
+# SYSDEPS start
+
+_sd_sysinfo.h:
+	@echo SYSDEPS sd-sysinfo run create _sd_sysinfo.h 
+	@(cd SYSDEPS && ./sd-run modules/sd-sysinfo)
+
+
+sd-sysinfo_clean:
+	@echo SYSDEPS sd-sysinfo clean _sd_sysinfo.h 
+	@(cd SYSDEPS && ./sd-clean modules/sd-sysinfo)
+
+
+sysdeps_clean:\
+sd-sysinfo_clean \
+
+
+
+# SYSDEPS end
+#----------------------------------------------------------------------
+
 UNIT_TESTS/bht_support.ads:\
 cgbc-bounded_hashed_maps.ali
 
@@ -1222,7 +1243,7 @@ cc-link cgbc-conf.ld cgbc-conf.o ctxt/ctxt.a
 	./cc-link cgbc-conf cgbc-conf.o ctxt/ctxt.a
 
 cgbc-conf.o:\
-cc-compile cgbc-conf.c ctxt.h
+cc-compile cgbc-conf.c ctxt.h _sd_sysinfo.h
 	./cc-compile cgbc-conf.c
 
 cgbc.a:\
@@ -1388,7 +1409,7 @@ conf-cc conf-ld
 mk-systype:\
 conf-cc conf-ld
 
-clean-all: tests_clean obj_clean ext_clean
+clean-all: sysdeps_clean tests_clean obj_clean ext_clean
 clean: obj_clean
 obj_clean:
 	rm -f UNIT_TESTS/bht_support.ali UNIT_TESTS/bht_support.o \
