@@ -17,9 +17,9 @@ Currently, the following packages are implemented:
 <ul>
   <li>CGBC.Bounded_Stacks</li>
   <li>CGBC.Bounded_Hashed_Maps</li>
-  <li>CGBC.Generic_Bounded_Strings</li>
+  <li>CGBC.Bounded_Generic_Strings</li>
   <li>CGBC.Bounded_Strings</li>
-  <li>CGBC.Wide_Bounded_Strings</li>
-  <li>CGBC.Wide_Wide_Bounded_Strings</li>
+  <li>CGBC.Bounded_Wide_Strings</li>
+  <li>CGBC.Bounded_Wide_Wide_Strings</li>
 </ul>
 </p>
