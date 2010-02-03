@@ -62,7 +62,7 @@ do
     TEST_STATEMENT=" (${TEST_STATEMENT})"
   fi
 
-  printf "%-12d : %-12s : %-12s : %s%s\n" \
+  printf "%-12d : %-12s : %-24s : %s%s\n" \
     "${TEST_ID}" "${TEST_STATE}" "${TEST_PROGRAM}" "${TEST_DESCRIPTION}" "${TEST_STATEMENT}"
 
   case ${TEST_STATE} in
