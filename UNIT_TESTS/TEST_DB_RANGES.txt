@@ -1,0 +1,6 @@
+1    .. 99   : CGBC.Bounded_Hashed_Maps
+100  .. 199  : CGBC.Bounded_Stacks
+200  .. 300  : CGBC.Bounded_Strings
+400  .. 499  : CGBC.Bounded_Hashed_Open_Maps
+1200 .. 1300 : CGBC.Bounded_Wide_Strings
+2200 .. 2300 : CGBC.Bounded_Wide_Wide_Strings
