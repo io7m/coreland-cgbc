@@ -13,7 +13,7 @@ various code coverage tools).</p>
 <p>
 Currently, the following packages are implemented:
 </p>
-<p>
+<div>
 <ul>
   <li>CGBC.Bounded_Stacks</li>
   <li>CGBC.Bounded_Hashed_Maps</li>
@@ -22,4 +22,4 @@ Currently, the following packages are implemented:
   <li>CGBC.Bounded_Wide_Strings</li>
   <li>CGBC.Bounded_Wide_Wide_Strings</li>
 </ul>
-</p>
+</div>
